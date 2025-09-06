@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sade – Promise (LP)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: #000C1F;
+        color: #00FFFF;
+        font-family: 'Orbitron', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+    header {
+        background-color: #000;
+        padding: 20px 0;
+        border-bottom: 5px solid #00FFFF;
+        box-shadow: 0 0 20px #00FFFF;
+    }
+    header h1 {
+        color: #00FFFF;
+        font-size: 3em;
+        margin: 0;
+        text-shadow: 0 0 10px #00FFFF;
+    }
+    h2, h3 {
+        color: #F0F0F0;
+        border-bottom: 2px solid #00FFFF;
+        padding-bottom: 5px;
+        text-shadow: 0 0 5px #00FFFF;
+    }
+    p {
+        line-height: 1.7;
+        color: #F0F0F0;
+    }
+    .tracklist {
+        background-color: #111;
+        padding: 15px;
+        border-left: 5px solid #00FFFF;
+        margin: 20px auto;
+        display: inline-block;
+        text-align: left;
+        box-shadow: 0 0 15px #00FFFF;
+    }
+    ul {
+        line-height: 1.7;
+        padding-left: 20px;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .slide {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #00FFFF;
+        font-weight: bold;
+        font-size: 18px;
+        user-select: none;
+        text-shadow: 0 0 10px #00FFFF;
+    }
+    .next {
+        right: 0;
+    }
+    .prev {
+        left: 0;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #000;
+        color: #888;
+        margin-top: 40px;
+        border-top: 2px solid #00FFFF;
+    }
+    a {
+        color: #00FFFF;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Sade – Promise</h1>
+</header>
+
+<div class="container">
+
+    <h2>Tracklist (LP Slideshow met Kanten en Tijd)</h2>
+    <div class="slideshow-container">
+
+        <div class="slide active">
+            <h3>Kant A</h3>
+            <div class="tracklist">
+                <ul>
+                    <li>Is It A Crime – 6:18</li>
+                    <li>The Sweetest Taboo – 4:31</li>
+                    <li>War Of The Hearts – 6:46</li>
+                    <li>Jezebel – 5:27</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h3>Kant B</h3>
+            <div class="tracklist">
+                <ul>
+                    <li>Mr. Wrong – 2:46</li>
+                    <li>Never As Good As The First Time – 4:57</li>
+                    <li>Fear – 4:06</li>
+                    <li>Tar Baby – 3:55</li>
+                    <li>Maureen – 4:18</li>
+                </ul>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <h2>Biografie van Sade</h2>
+    <p><strong>Helen Folasade Adu</strong>, beter bekend als <strong>Sade</strong>, werd geboren op 16 januari 1959 in Nigeria en groeide op in Engeland. Ze begon als modeontwerpster en achtergrondzangeres, maar brak in 1984 door met het album <em>Diamond Life</em>. Een jaar later volgde <em>Promise</em>, haar tweede album, dat haar wereldwijd op de kaart zette.</p>
+    <p>Haar kenmerkende stijl combineert soul, jazz, funk en pop met een betoverende, zwoele stem. Ondanks haar supersterrenstatus blijft Sade een van de meest mysterieuze en gereserveerde artiesten in de muziekindustrie, met slechts sporadische releases en zeldzame optredens.</p>
+    <p><a href="https://nl.wikipedia.org/wiki/Sade_(band)" target="_blank">Lees meer over Sade op Wikipedia</a></p>
+
+    <h2>Trivia</h2>
+    <div class="tracklist">
+        <ul>
+            <li>Het album werd vernoemd naar een belofte die Sade aan haar ouders deed.</li>
+            <li>De hoesfoto is gemaakt door Toshi Yajima.</li>
+            <li>Promise bereikte de nummer 1 positie in zowel het VK als de VS.</li>
+            <li>“Is It A Crime” is een van haar meest intense en langste nummers.</li>
+            <li>“The Sweetest Taboo” werd een wereldhit.</li>
+            <li>Sade’s muziek wordt vaak gecategoriseerd als “sophisti-pop”.</li>
+            <li>Opgenomen in Power Plant Studios (Londen) en Studio Miraval (Frankrijk).</li>
+            <li>Haar bandleden zijn Stuart Matthewman, Paul Denman en Andrew Hale.</li>
+            <li>“Jezebel” vertelt het verhaal van een vrouw die haar omstandigheden wil overstijgen.</li>
+            <li>“Never As Good As The First Time” heeft subtiele reggae-invloeden.</li>
+            <li>Het album verkocht wereldwijd meer dan 5 miljoen exemplaren.</li>
+            <li>Sade won een Grammy voor Best New Artist in 1986.</li>
+            <li>Haar muziek is bekend om zijn tijdloze productie en pure emotie.</li>
+            <li>Het nummer “Fear” is een meesterwerk van minimalisme en emotie.</li>
+            <li>Promise heeft de status van klassieker in de jazz en soulwereld.</li>
+            <li>Sade wordt vaak geciteerd als invloed voor artiesten als Drake, Beyoncé en Alicia Keys.</li>
+            <li>“Tar Baby” is een diep persoonlijk nummer over identiteit en afkomst.</li>
+            <li>De zeldzaamheid van haar publieke optredens vergroot alleen maar haar legendarische status.</li>
+            <li>Sade combineert elegantie met emotionele kwetsbaarheid op unieke wijze.</li>
+            <li>Haar live-optredens staan bekend om hun pure eenvoud en focus op muziek en emotie.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Sade Tribute | Design geïnspireerd op de Promise LP
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) {slideIndex = 0}
+    if (n < 0) {slideIndex = slides.length - 1}
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+</script>
+
+</body>
+</html>

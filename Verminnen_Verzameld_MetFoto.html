@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verminnen Verzameld (LP)</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: #d3eaf2;
+        color: #333;
+        font-family: 'Fredoka', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+    header {
+        background-color: #ffffff;
+        padding: 20px 0;
+        border-bottom: 8px solid #ff4da6;
+        box-shadow: 0 0 20px #ff4da6;
+    }
+    header h1 {
+        color: #ff4da6;
+        font-size: 3em;
+        margin: 0;
+        text-shadow: 2px 2px 5px #fff;
+    }
+    h2, h3 {
+        color: #ff4da6;
+        border-bottom: 3px solid #ffc107;
+        padding-bottom: 5px;
+        text-shadow: 1px 1px 3px #fff;
+    }
+    p {
+        line-height: 1.7;
+        color: #222;
+    }
+    .tracklist {
+        background-color: #fff;
+        padding: 15px;
+        border-left: 8px solid #ff4da6;
+        margin: 20px auto;
+        display: inline-block;
+        text-align: left;
+        box-shadow: 0 0 10px #aaa;
+    }
+    ul {
+        line-height: 1.7;
+        padding-left: 20px;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .slide {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        background-color: #ffc107;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 50%;
+        font-size: 18px;
+        user-select: none;
+        box-shadow: 0 0 5px #333;
+    }
+    .next {
+        right: 0;
+    }
+    .prev {
+        left: 0;
+    }
+    .artist-photo {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #555;
+        margin: 20px 0;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #fff;
+        color: #555;
+        margin-top: 40px;
+        border-top: 4px solid #ff4da6;
+    }
+    a {
+        color: #007ACC;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Verminnen Verzameld</h1>
+</header>
+
+<div class="container">
+
+    <h2>Tracklist (LP Slideshow)</h2>
+    <div class="slideshow-container">
+
+        <div class="slide active">
+            <h3>Tracklist</h3>
+            <div class="tracklist">
+                <ul>
+                    <li>Daar Gaat Ze</li>
+                    <li>Zing Zing</li>
+                    <li>Twee Handen</li>
+                    <li>Ieder Met Zijn Vlag</li>
+                    <li>Zeg Me</li>
+                    <li>Laat Me Nu Toch Niet Alleen</li>
+                    <li>In De Vriezige Morgen</li>
+                    <li>Rozemarijn</li>
+                    <li>Karnaval In Mei</li>
+                    <li>Wilde Wind</li>
+                </ul>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <h2>Biografie van Johan Verminnen</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Johan-verminnen-1421735197.jpg" alt="Johan Verminnen" class="artist-photo">
+    <p><strong>Johan Verminnen</strong> werd geboren op 22 mei 1951 in Wemmel, België. Hij groeide op in een muzikale familie en raakte al vroeg gepassioneerd door muziek. Zijn liefde voor chanson, jazz en folk werd gevoed door artiesten zoals Jacques Brel en Georges Brassens.</p>
+    <p>In de jaren '70 brak hij door met “Laat Me Nu Toch Niet Alleen”, een nummer dat hem op de kaart zette als een van de meest geliefde Vlaamse zangers. Zijn teksten zijn vaak poëtisch, melancholisch en doordrenkt met verhalen over het leven in de stad, liefde en de menselijke ervaring.</p>
+    <p>Brussel speelt een centrale rol in zijn oeuvre, waar hij met veel liefde en soms weemoed over zingt. Doorheen de jaren bracht hij meer dan 25 albums uit en bleef hij onafgebroken optreden in Vlaanderen en Nederland.</p>
+    <p>Naast zijn muzikale carrière was hij jarenlang voorzitter van SABAM, waar hij zich inzette voor de rechten van artiesten. Zijn jubileumtournee in 2021 markeerde 50 jaar op de planken, een carrière waarin hij zijn publiek bleef ontroeren en verbinden.</p>
+    <p>Tot op vandaag blijft Johan Verminnen actief, met nieuwe liedjes, optredens en een publiek dat van generatie op generatie groeit. Zijn warme stem en oprechte teksten maken hem tot een echte ambassadeur van het Nederlandstalige lied.</p>
+    <p><a href="https://nl.wikipedia.org/wiki/Johan_Verminnen" target="_blank">Lees meer over Johan Verminnen op Wikipedia</a></p>
+
+    <h2>Trivia</h2>
+    <div class="tracklist">
+        <ul>
+            <li>Zijn eerste grote hit was “Laat Me Nu Toch Niet Alleen”.</li>
+            <li>Het album Verminnen Verzameld is een compilatie van zijn bekendste nummers.</li>
+            <li>“Daar Gaat Ze” is een ode aan onbereikbare liefde.</li>
+            <li>“Zing Zing” is een oproep om altijd te blijven zingen.</li>
+            <li>Hij is sterk beïnvloed door Jacques Brel en Georges Brassens.</li>
+            <li>“Twee Handen” gaat over vriendschap en verbondenheid.</li>
+            <li>De hoes weerspiegelt de typische jaren '70 stijl.</li>
+            <li>Brussel speelt een grote rol in veel van zijn liedjes.</li>
+            <li>“In De Vriezige Morgen” schetst een beeld van de stad in de winter.</li>
+            <li>“Rozemarijn” is een poëtisch liefdeslied.</li>
+            <li>Zijn muziek is een brug tussen het Vlaamse en Franse chanson.</li>
+            <li>Hij werkte samen met veel Belgische artiesten.</li>
+            <li>Zijn optredens zijn vaak intiem en klein.</li>
+            <li>“Karnaval In Mei” viert de absurditeit van het leven.</li>
+            <li>Zijn teksten bevatten sociale observaties zonder belerend te zijn.</li>
+            <li>“Ieder Met Zijn Vlag” gaat over identiteit en verscheidenheid.</li>
+            <li>Hij heeft een eredoctoraat gekregen voor zijn bijdrage aan muziek.</li>
+            <li>Hij bleef altijd een bescheiden man van het volk.</li>
+            <li>“Wilde Wind” gaat over vrijheid en onvoorspelbaarheid.</li>
+            <li>Zijn stem en teksten blijven generaties inspireren.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Verminnen Tribute | Design geïnspireerd op de Verzameld LP
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) {slideIndex = 0}
+    if (n < 0) {slideIndex = slides.length - 1}
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+</script>
+
+</body>
+</html>

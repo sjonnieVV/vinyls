@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rise Against – Vorst 2025 • GitHub Pages versie</title>
+<style>
+body {
+  margin: 0;
+  background: url('Background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+h1 {
+  margin-top: 20px;
+  font-size: 3em;
+  color: #E31C25;
+  text-shadow: 0 0 10px #E31C25, 0 0 20px #E31C25, 0 0 40px #E31C25;
+}
+h2 {
+  color: #E31C25;
+}
+.slideshow {
+  max-width: 500px;
+  height: 800px;
+  margin: 30px auto;
+  position: relative;
+}
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.active {
+  display: block;
+  opacity: 1;
+}
+.buttons {
+  margin-top: 10px;
+}
+.buttons button, .fullscreen-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #E31C25;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #E31C25;
+}
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+.videoshow {
+  max-width: 90%;
+  margin: 30px auto;
+  position: relative;
+}
+.videoslide {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.videoslide.active {
+  display: block;
+  opacity: 1;
+}
+.trivia {
+  background-color: rgba(0,0,0,0.8);
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 90%;
+  border-radius: 15px;
+}
+.trivia ul {
+  text-align: left;
+}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<h1>Rise Against – Vorst 2025</h1>
+
+<h2>Fotoslideshow</h2>
+<div class="slideshow">
+  <img class="slide active" src="Rise1.jpg">
+  <img class="slide" src="Rise2.jpg">
+  <img class="slide" src="Rise3.jpg">
+  <img class="slide" src="Rise4.jpg">
+  <img class="slide" src="Rise5.jpg">
+  <img class="slide" src="Rise6.jpg">
+  <img class="slide" src="Rise7.jpg">
+  <img class="slide" src="Rise8.jpg">
+  <img class="slide" src="Rise9.jpg">
+  <img class="slide" src="Rise10.jpg">
+  <img class="slide" src="Rise11.jpg">
+  <img class="slide" src="Rise12.jpg">
+</div>
+<div class="buttons">
+  <button onclick="prevSlide()">Vorige Foto</button>
+  <button onclick="nextSlide()">Volgende Foto</button>
+  <button class="fullscreen-btn" onclick="toggleFullScreen()">Fullscreen</button>
+</div>
+
+<h2>Videoslideshow</h2>
+<div class="videoshow">
+  <video class="videoslide active" controls poster="Rise1.jpg">
+    <source src="Risevid1.mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="Rise2.jpg">
+    <source src="Risevid2.mp4" type="video/mp4">
+  </video>
+</div>
+<div class="buttons">
+  <button onclick="prevVideo()">Vorige Video</button>
+  <button onclick="nextVideo()">Volgende Video</button>
+  <button class="fullscreen-btn" onclick="toggleFullScreen()">Fullscreen</button>
+</div>
+<!-- BIO -->
+<div class="trivia" style="background-color: rgba(0,0,0,0.85); margin-top: 28px;">
+  <h2 style="color:#E31C25;">Bio – Rise Against</h2>
+  <p><strong>Rise Against</strong> is een Amerikaanse punkrock/hardcoreband uit Chicago (opgericht in 1999). 
+  De groep – bekend om hun energieke liveshows en melodische hardcore sound – koppelt scherpe, maatschappelijk betrokken teksten 
+  aan grote meezingrefreinen. Thema’s als klimaat, ongelijkheid, oorlog en dierenrechten keren in hun werk vaak terug.</p>
+  <p>Na de vroege albums <em>The Unraveling</em> (2001) en <em>Revolutions per Minute</em> (2003) brak de band breder door met 
+  <em>Siren Song of the Counter Culture</em> (2004) en hits als “Give It All”. Verdere successen volgden met 
+  <em>The Sufferer &amp; the Witness</em> (2006), <em>Appeal to Reason</em> (2008) en <em>Endgame</em> (2011). 
+  Hun muziek combineert snelheid en melodie met een uitgesproken activistische houding; de band werkt geregeld samen met o.a. PETA en Amnesty.</p>
+  <p>De kern bestaat uit <em>Tim McIlrath</em> (zang/gitaar), <em>Zach Blair</em> (gitaar), <em>Joe Principe</em> (bas) en 
+  <em>Brandon Barnes</em> (drums). Live staat de mix van politiek geladen punk en akoestische intermezzo’s centraal.</p>
+  <p>Meer info: <a href="https://nl.wikipedia.org/wiki/Rise_Against" target="_blank" rel="noopener">Wikipedia – Rise Against</a></p>
+</div>
+
+
+
+<div class="trivia">
+<h2>15 Trivia Weetjes over Rise Against</h2>
+<ul>
+  <li>Rise Against werd opgericht in 1999 in Chicago, Illinois.</li>
+  <li>De band begon oorspronkelijk onder de naam 'Transistor Revolt'.</li>
+  <li>Hun eerste album, 'The Unraveling', werd uitgebracht in 2001.</li>
+  <li>De wereldwijde doorbraak kwam in 2004 met 'Give It All'.</li>
+  <li>De band staat bekend om hun sterke maatschappelijke en politieke betrokkenheid.</li>
+  <li>Alle bandleden zijn vegetariërs of veganisten en steunen dierenrechten.</li>
+  <li>Ze leven grotendeels volgens de straight edge levensstijl, zonder alcohol of drugs.</li>
+  <li>Rise Against staat wereldwijd bekend om hun energieke en gepassioneerde optredens.</li>
+  <li>Hun akoestische album 'The Ghost Note Symphonies' liet een zachtere kant zien.</li>
+  <li>Hun videoclip 'Ready to Fall' legt de focus op milieuproblematiek en dierenleed.</li>
+  <li>Ze werden sterk beïnvloed door bands zoals Minor Threat en Bad Religion.</li>
+  <li>Ze werken nauw samen met organisaties zoals Amnesty International.</li>
+  <li>Veel van hun teksten gaan over ongelijkheid, oorlog en het milieu.</li>
+  <li>Rise Against heeft een zeer toegewijde en wereldwijde fanbase.</li>
+  <li>Hun tiende studioalbum 'Ricochet' wordt uitgebracht in augustus 2025.</li>
+</ul>
+</div>
+
+<script>
+// Foto slideshow
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+let slideInterval;
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+function startSlideshow() {
+  slideInterval = setInterval(() => {
+    nextSlide();
+  }, 10000);
+}
+
+startSlideshow();
+
+// Video slideshow
+let currentVideo = 0;
+const videos = document.querySelectorAll('.videoslide');
+
+function showVideo(index) {
+  videos.forEach(video => {
+    video.classList.remove('active');
+    video.pause();
+    video.currentTime = 0;
+  });
+  videos[index].classList.add('active');
+}
+
+function nextVideo() {
+  currentVideo = (currentVideo + 1) % videos.length;
+  showVideo(currentVideo);
+}
+
+function prevVideo() {
+  currentVideo = (currentVideo - 1 + videos.length) % videos.length;
+  showVideo(currentVideo);
+}
+
+// Fullscreen functie
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+</script>
+
+<script>
+// #start helper: scroll naar eerste slideshow bij NFC/link
+window.addEventListener('load', function() {
+  if ((location.hash||'').toLowerCase() === '#start') {
+    const first = document.querySelector('.slideshow');
+    if (first) first.scrollIntoView({behavior:'smooth'});
+  }
+});
+</script>
+</body>
+</html>

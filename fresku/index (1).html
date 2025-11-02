@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresku – Leren Leven • GitHub Pages versie</title>
+<style>
+body {
+  margin: 0;
+  background: url('freskubackground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+h1 {
+  margin-top: 20px;
+  font-size: 3em;
+  color: #FFD700;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 40px #FFD700;
+}
+h2 {
+  color: #FFD700;
+}
+.slideshow, .videoshow {
+  max-width: 500px;
+  height: 800px;
+  margin: 30px auto;
+  position: relative;
+}
+.slide, .amsterslide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.active {
+  display: block;
+  opacity: 1;
+}
+.buttons {
+  margin-top: 10px;
+}
+.buttons button, .fullscreen-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #FFD700;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FFD700;
+}
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+.videoshow {
+  max-width: 90%;
+  margin: 30px auto;
+  position: relative;
+}
+.videoslide {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.videoslide.active {
+  display: block;
+  opacity: 1;
+}
+.trivia {
+  background-color: rgba(0,0,0,0.8);
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 90%;
+  border-radius: 15px;
+}
+.trivia ul {
+  text-align: left;
+}
+.tracklist {
+  background-color: rgba(0,0,0,0.8);
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 90%;
+  border-radius: 15px;
+}
+.tracklist ul {
+  text-align: left;
+}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<h1>Fresku – Leren Leven</h1>
+<!-- TRACKLIST -->
+<div class="tracklist">
+<h2>Tracklist – Leren Leven (2024)</h2>
+<ul>
+  <li>1. Thuis Kunnen Zijn (feat. Elijah Waters)</li>
+  <li>2. Stervelingen</li>
+  <li>3. Worden Geleefd (feat. Isabèl Usher)</li>
+  <li>4. Vluchten</li>
+  <li>5. Hoe Dan Ook (feat. MocroManiac)</li>
+  <li>6. Onbegrepen</li>
+  <li>7. Draai Terug de Tijd (feat. Jennie Lena)</li>
+  <li>8. Lachen Met Verdriet (feat. Neema Nekesa)</li>
+  <li>9. Reclame</li>
+  <li>10. Ruimteschip</li>
+  <li>11. Vallende Sterren</li>
+  <li>12. Ongeëvenaard (feat. Benjamin)</li>
+  <li>13. Reken Maar</li>
+  <li>14. Op Mezelf (feat. Neema Nekesa)</li>
+  <li>15. Hart in Je Handen</li>
+  <li>16. Buiten Bereik (feat. Isabèl Usher)</li>
+  <li>17. Afgoderij</li>
+  <li>18. Leren Leven</li>
+  <li>19. Vechten</li>
+  <li>20. Ondanks Alles (feat. Neema Nekesa)</li>
+  <li>21. Begrijpen</li>
+  <li>22. De Tijd Leert (feat. Rigt)</li>
+  <li>23. Tranen van Geluk</li>
+  <li>24. Boodschap</li>
+  <li>25. Astronaut</li>
+  <li>26. Sterrenlicht</li>
+  <li>27. Gelijk</li>
+  <li>28. Reken op Mij (feat. Maan)</li>
+  <li>29. Als Jezelf (feat. Shadi)</li>
+  <li>30. Hand op Mijn Hart</li>
+</ul>
+</div>
+<!-- SLIDESHOW FRESKU -->
+<h2>Fotoslideshow – Fresku</h2>
+<div class="slideshow">
+  <img class="slide active" src="fresku(1).jpg">
+  <img class="slide" src="fresku(2).jpg">
+  <img class="slide" src="fresku(3).jpg">
+  <img class="slide" src="fresku(4).jpg">
+  <img class="slide" src="fresku(5).jpg">
+  <img class="slide" src="fresku(6).jpg">
+  <img class="slide" src="fresku(7).jpg">
+  <img class="slide" src="fresku(8).jpg">
+  <img class="slide" src="fresku(9).jpg">
+  <img class="slide" src="fresku(10).jpg">
+  <img class="slide" src="fresku(11).jpg">
+  <img class="slide" src="fresku(12).jpg">
+  <img class="slide" src="fresku(13).jpg">
+  <img class="slide" src="fresku(14).jpg">
+  <img class="slide" src="fresku(15).jpg">
+  <img class="slide" src="fresku(16).jpg">
+  <img class="slide" src="fresku(17).jpg">
+  <img class="slide" src="fresku(18).jpg">
+  <img class="slide" src="fresku(19).jpg">
+  <img class="slide" src="fresku(20).jpg">
+  <img class="slide" src="fresku(21).jpg">
+  <img class="slide" src="fresku(22).jpg">
+</div>
+<div class="buttons">
+  <button onclick="prevSlide()">Vorige Foto</button>
+  <button onclick="nextSlide()">Volgende Foto</button>
+  <button class="fullscreen-btn" onclick="toggleFullScreen()">Fullscreen</button>
+</div>
+<!-- SLIDESHOW AMSTER -->
+<h2>Fotoslideshow – Amster</h2>
+<div class="slideshow">
+  <img class="amsterslide active" src="amster%20(1).jpg">
+  <img class="amsterslide" src="amster%20(2).jpg">
+  <img class="amsterslide" src="amster%20(3).jpg">
+  <img class="amsterslide" src="amster%20(4).jpg">
+  <img class="amsterslide" src="amster%20(5).jpg">
+  <img class="amsterslide" src="amster%20(6).jpg">
+  <img class="amsterslide" src="amster%20(7).jpg">
+  <img class="amsterslide" src="amster%20(8).jpg">
+  <img class="amsterslide" src="amster%20(9).jpg">
+  <img class="amsterslide" src="amster%20(10).jpg">
+  <img class="amsterslide" src="amster%20(11).jpg">
+  <img class="amsterslide" src="amster%20(12).jpg">
+  <img class="amsterslide" src="amster%20(13).jpg">
+  <img class="amsterslide" src="amster%20(14).jpg">
+  <img class="amsterslide" src="amster%20(15).jpg">
+  <img class="amsterslide" src="amster%20(16).jpg">
+  <img class="amsterslide" src="amster%20(17).jpg">
+  <img class="amsterslide" src="amster%20(18).jpg">
+  <img class="amsterslide" src="amster%20(19).jpg">
+  <img class="amsterslide" src="amster%20(20).jpg">
+  <img class="amsterslide" src="amster%20(21).jpg">
+</div>
+<div class="buttons">
+  <button onclick="prevAmster()">Vorige Foto</button>
+  <button onclick="nextAmster()">Volgende Foto</button>
+  <button class="fullscreen-btn" onclick="toggleFullScreen()">Fullscreen</button>
+</div>
+<!-- VIDEOSLIDESHOW -->
+<h2>Videoslideshow</h2>
+<div class="videoshow">
+  <video class="videoslide active" controls poster="fresku(1).jpg">
+    <source src="amstervid%20(1).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(2).jpg">
+    <source src="amstervid%20(2).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(3).jpg">
+    <source src="amstervid%20(3).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(4).jpg">
+    <source src="amstervid%20(4).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(5).jpg">
+    <source src="amstervid%20(5).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(6).jpg">
+    <source src="amstervid%20(6).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(7).jpg">
+    <source src="amstervid%20(7).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(8).jpg">
+    <source src="amstervid%20(8).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(9).jpg">
+    <source src="amstervid%20(9).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(10).jpg">
+    <source src="amstervid%20(10).mp4" type="video/mp4">
+  </video>
+  <video class="videoslide" controls poster="fresku(11).jpg">
+    <source src="amstervid%20(11).mp4" type="video/mp4">
+  </video>
+</div>
+<div class="buttons">
+  <button onclick="prevVideo()">Vorige Video</button>
+  <button onclick="nextVideo()">Volgende Video</button>
+  <button class="fullscreen-btn" onclick="toggleFullScreen()">Fullscreen</button>
+</div>
+<!-- TRIVIA -->
+<div class="trivia">
+<h2>Trivia over Fresku en het album Leren Leven</h2>
+<ul>
+  <li>Fresku’s echte naam is Roy Michael Reymound, geboren in Eindhoven in 1986.</li>
+  <li>Het album *Leren Leven* kwam uit op 26 september 2024 en is zijn meest persoonlijke werk ooit.</li>
+  <li>De teksten behandelen mentale gezondheid, vaderschap, depressie en zelfliefde.</li>
+  <li>Fresku gebruikt dit album als een vorm van therapie voor zichzelf en als inspiratie voor anderen.</li>
+  <li>Hij beperkte sociale media tijdens het maken van *Leren Leven* om zich volledig te focussen.</li>
+  <li>Het album heeft weinig tot geen gastfeatures om het puur en persoonlijk te houden.</li>
+  <li>De productie is bewust minimalistisch zodat de teksten volledig centraal staan.</li>
+  <li>De track "Leren Leven" gaat over omgaan met het verleden en het leren van levenslessen.</li>
+  <li>Fresku staat bekend om zijn combinatie van humor en rauwe eerlijkheid in zijn muziek.</li>
+  <li>Naast rapper is Fresku ook actief als filmmaker en acteur.</li>
+  <li>Hij heeft meerdere State Awards gewonnen, waaronder Beste Artiest en Beste Album.</li>
+  <li>Fresku heeft Curaçaose roots; zijn vader kwam van Curaçao.</li>
+  <li>Hij begon ooit als komiek en filmmaker voordat hij doorbrak als rapper.</li>
+  <li>De videoclip van "Leren Leven" is bewust simpel gehouden om de boodschap krachtiger te maken.</li>
+  <li>Na de release zei Fresku dat hij eindelijk zichzelf beter begrijpt, maar dat hij nog steeds 'aan het leren leven' is.</li>
+</ul>
+</div>
+<script>
+// FRESKU SLIDESHOW
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// AMSTER SLIDESHOW
+let currentAmster = 0;
+const amsterSlides = document.querySelectorAll('.amsterslide');
+
+function showAmster(index) {
+  amsterSlides.forEach(slide => slide.classList.remove('active'));
+  amsterSlides[index].classList.add('active');
+}
+
+function nextAmster() {
+  currentAmster = (currentAmster + 1) % amsterSlides.length;
+  showAmster(currentAmster);
+}
+
+function prevAmster() {
+  currentAmster = (currentAmster - 1 + amsterSlides.length) % amsterSlides.length;
+  showAmster(currentAmster);
+}
+
+// VIDEO SLIDESHOW
+let currentVideo = 0;
+const videos = document.querySelectorAll('.videoslide');
+
+function showVideo(index) {
+  videos.forEach(video => {
+    video.classList.remove('active');
+    video.pause();
+    video.currentTime = 0;
+  });
+  videos[index].classList.add('active');
+}
+
+function nextVideo() {
+  currentVideo = (currentVideo + 1) % videos.length;
+  showVideo(currentVideo);
+}
+
+function prevVideo() {
+  currentVideo = (currentVideo - 1 + videos.length) % videos.length;
+  showVideo(currentVideo);
+}
+
+// FULLSCREEN FUNCTIE
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+</script>
+
+<script>
+// Kleine helper: als URL eindigt op #start, scrol naar eerste slideshow.
+window.addEventListener('load', function() {
+  if (location.hash && location.hash.toLowerCase() === '#start') {
+    const first = document.querySelector('.slideshow');
+    if (first) first.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+});
+</script>
+</body>
+</html>

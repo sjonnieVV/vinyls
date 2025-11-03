@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Big Push – Can Do Will Do (Vinyl A/B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+        /* Album-inspired palette (sky blue, sunshine yellow, coral red) */
+        --bg:#0b0f13;             /* deep navy background */
+        --fg:#f6f8fb;             /* near white text */
+        --muted:#cfe5ff;          /* soft ice-blue headings */
+        --panel:#0f141b;          /* dark panel */
+        --ring:rgba(255,255,255,0.12);
+        --accent:#6ec7e0;         /* sky blue */
+        --accent2:#f7e36a;        /* sweatshirt yellow */
+        --accent3:#d94e4e;        /* skateboard red */
+        --glow:rgba(110,199,224,0.35);
+        --grad1: radial-gradient(900px 420px at 50% -10%, rgba(110,199,224,0.22), transparent 60%);
+        --grad2: linear-gradient(135deg, rgba(110,199,224,0.10), rgba(247,227,106,0.08));
+    }
+    *{box-sizing:border-box}
+    body{ margin:0; background:var(--bg); color:var(--fg); font-family:'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell; text-align:center; }
+    a{ color:var(--accent2); }
+    .container{ max-width:1100px; margin:0 auto; padding:22px; }
+
+    /* LP label header */
+    .lp-header{ padding:44px 0 22px; border-bottom:4px solid var(--accent); box-shadow:0 0 28px var(--glow); background:var(--grad1); }
+    .lp-label{
+        width:220px;height:220px;border-radius:50%;margin:0 auto 10px;position:relative;display:grid;place-items:center;
+        background:radial-gradient(closest-side,#0f1a24 0%, #1b2a35 68%, #0f1a24 100%);
+        border:4px solid var(--ring); box-shadow:0 0 34px var(--glow), inset 0 0 42px rgba(0,0,0,.55);
+    }
+    .lp-label::before{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#0f0f13 0%, #2b2a33 60%, #0f0f13 100%);border:2px solid var(--ring)}
+    .lp-text{position:absolute;inset:0;display:grid;place-items:center;padding:28px}
+    .lp-album{font-size:18px;font-weight:700;letter-spacing:.7px}
+    .lp-artist{font-size:12px;color:var(--muted)}
+
+    h2,h3{ color:var(--muted); border-bottom:2px solid var(--accent); padding-bottom:6px; text-shadow:0 0 10px var(--glow) }
+
+    .panel{
+        background:var(--grad2); border:1px solid var(--ring); border-radius:14px; padding:14px 16px;
+        box-shadow:0 0 20px rgba(0,0,0,.35); text-align:left;
+    }
+    .trackbox{ border-left:6px solid var(--accent3); background:#0e1218; }
+
+    .vinyl-grid{ display:grid; grid-template-columns:repeat(2,minmax(260px,1fr)); gap:16px; margin-top:12px; }
+    @media (max-width:800px){ .vinyl-grid{ grid-template-columns:1fr; } }
+
+    ul{ margin:0; padding-left:20px; line-height:1.8 }
+    li::marker{ color:var(--accent2) }
+    .time{ color:#b9e6ff; opacity:.95; font-style:italic }
+
+    .bio{ margin-top:16px }
+    .bio-links{ margin:8px 0 14px; font-size:.95rem; text-align:left }
+    .trivia-list li{ margin-bottom:.85rem; line-height:1.75; }
+
+    footer{ margin-top:36px; padding:18px 12px 28px; border-top:2px solid var(--accent); color:#cfe5ff }
+</style>
+</head>
+<body>
+    <div class="lp-header">
+        <div class="lp-label">
+            <div class="lp-text">
+                <div class="lp-album">Can Do Will Do (EP)</div>
+                <div class="lp-artist">The Big Push</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Tracklist — Vinyl (A/B)</h2>
+        <div class="vinyl-grid">
+            <div class="panel trackbox">
+                <h3>Kant A</h3>
+                <ul>
+                    <li>1 — Watch Out <span class="time">· 3:53</span></li>
+                    <li>2 — Xbox Marijuana <span class="time">· 2:50</span></li>
+                    <li>3 — Mannequin <span class="time">· 3:23</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant B</h3>
+                <ul>
+                    <li>1 — When She Goes <span class="time">· 2:19</span></li>
+                    <li>2 — All My Heroes <span class="time">· 5:04</span></li>
+                    <li>3 — Precious <span class="time">· 3:25</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Biografie</h2>
+        <div class="panel bio">
+            <p><strong>The Big Push</strong> is een vierkoppige band uit Brighton (VK) die internationale bekendheid verwierf met virale busking‑video’s. Met drie frontmannen (Ren, Romain Axisa en Gorran Kendall) en drummer Glenn Chambers bouwde de band een live‑reputatie op waarin meerstemmige zang, gitaar‑georiënteerde grooves en spontane improvisatie centraal staan.</p>
+            <p><em>Can Do Will Do</em> (2021) bundelt zes compacte tracks die eerder op straat en in kleine zalen werden aangescherpt. De EP koppelt riff‑gedreven energie aan melodische refreinen; “Watch Out” en “Xbox Marijuana” fungeerden als speerpunten op streaming en in setlists. De release markeerde de sprong van busk‑fenomeen naar volwaardige live‑act met een uitverkochte UK‑tour.</p>
+        </div>
+
+        <h2>Trivia (15)</h2>
+        <div class="bio-links">
+            🔗 <a href="https://open.spotify.com/album/7g5y91ioORTMI6aPgEKJL4" target="_blank" rel="noopener">Spotify – Can Do Will Do (EP)</a>
+            &nbsp;•&nbsp;
+            🔗 <a href="https://en.wikipedia.org/wiki/Ren_Gill" target="_blank" rel="noopener">Wikipedia – Ren Gill (context)</a>
+        </div>
+        <div class="panel">
+            <ul class="trivia-list">
+                <li>De vinyl‑editie splitst de EP in twee kanten (A/B) met drie tracks per kant — ideaal voor dynamische groef en volume.</li>
+                <li>De volgorde op vinyl (A: Watch Out / Xbox Marijuana / Mannequin — B: When She Goes / All My Heroes / Precious) volgt de Discogs‑vermelding van de 12″‑persing (33⅓ RPM).</li>
+                <li>“All My Heroes” is bewust op kant B gezet als langste track (ruim 5 minuten) voor de beste geluidsbalans en groefbreedte.</li>
+                <li>De EP verscheen op 30 juni 2021 en groeide via busking‑video’s uit tot een internationale niche‑hit.</li>
+                <li>De cover (hemelsblauw, geel, rood) is hier subtiel vertaald in accenten; typografie blijft strak en goed leesbaar.</li>
+                <li>“Watch Out” en “Xbox Marijuana” werden live‑publieksfavorieten vóór de studioversie beschikbaar kwam.</li>
+                <li>Riffs en harmonieën werden op straat “ge‑A/B‑test” met publiek, wat leidde tot strakkere studio‑arrangementen.</li>
+                <li>De band werkte DIY zonder groot label; distributie verliep via streaming en directe fan‑support.</li>
+                <li>De EP compact houden (6 tracks) hielp om live‑energie te vangen zonder fillers.</li>
+                <li>“Mannequin” en “When She Goes” vertegenwoordigen de pop‑kant; “All My Heroes” is epischer en bouwt gelaagd op.</li>
+                <li>De Spotify‑speeltijden corresponderen vrijwel met de vinyl‑labels; kleine afrondingsverschillen zijn gebruikelijk.</li>
+                <li>Meerstemmige refreinen zijn een handelsmerk; elk bandlid heeft specifieke harmonielijnen.</li>
+                <li>Busking‑opnames vormden vaak de basis voor videoclips en socials‑content rond de EP.</li>
+                <li>De combinatie van covers‑reputatie en eigen songs versnelde de overgang van straat naar zalen.</li>
+                <li>De 12″‑vinyl wordt op Discogs aangeboden in meerdere (re)press‑varianten sinds 2024–2025.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 The Big Push — Can Do Will Do (EP) — vinyl‑indeling (A/B) + tijden, bio & trivia
+    </footer>
+</body>
+</html>

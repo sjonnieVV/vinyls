@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juice WRLD – Goodbye & Good Riddance</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --bg: #0b0715;
+        --fg: #EDE7FF;
+        --dim: #CFC6FF;
+        --accent: #A889FF;
+        --accent2: #FF7BD5;
+        --panel: #141022;
+        --glow: rgba(168,137,255,0.65);
+        --label-dark: #090613;
+        --label-mid: #1a1430;
+        --label-ring: rgba(255,255,255,0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: 'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* Static LP Label Header */
+    .lp-header {
+        display: grid;
+        place-items: center;
+        padding: 40px 0 20px;
+        border-bottom: 5px solid var(--accent);
+        box-shadow: 0 0 24px var(--glow);
+        background: radial-gradient(800px 400px at 50% 0%, rgba(168,137,255,0.08), transparent 60%);
+    }
+    .lp-label {
+        width: 240px; height: 240px;
+        border-radius: 50%;
+        background:
+          radial-gradient(closest-side, var(--label-dark) 0%, var(--label-mid) 65%, var(--label-dark) 100%);
+        position: relative;
+        box-shadow: 0 0 30px var(--glow), inset 0 0 40px rgba(0,0,0,0.5);
+        border: 4px solid var(--label-ring);
+        display: grid;
+        place-items: center;
+        margin-bottom: 10px;
+    }
+    .lp-label::before {
+        content: "";
+        position: absolute;
+        width: 22px; height: 22px;
+        border-radius: 50%;
+        background: radial-gradient(circle, #111 0%, #333 60%, #111 100%);
+        border: 2px solid var(--label-ring);
+        box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    }
+    .lp-text {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        padding: 30px;
+        text-align: center;
+        line-height: 1.25;
+    }
+    .lp-album { font-size: 18px; font-weight: 700; letter-spacing: .6px; text-shadow: 0 0 8px var(--glow); }
+    .lp-artist { font-size: 12px; color: var(--dim); opacity: .9; }
+
+    h2, h3 {
+        color: var(--dim);
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 6px;
+        text-shadow: 0 0 8px var(--glow);
+    }
+    p { line-height: 1.8; color: var(--fg); }
+    .panel {
+        background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.00));
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 18px;
+        box-shadow: 0 0 24px rgba(0,0,0,0.35);
+    }
+    .vinyl-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+    @media (max-width: 800px) {
+        .vinyl-grid { grid-template-columns: 1fr; }
+    }
+    .trackbox {
+        background-color: #0f0b1e;
+        padding: 16px;
+        border-left: 5px solid var(--accent);
+        box-shadow: 0 0 16px var(--glow);
+        border-radius: 10px;
+        text-align: left;
+        min-width: 280px;
+    }
+    ul { line-height: 1.8; padding-left: 20px; margin: 0; }
+    li::marker { color: var(--accent); }
+
+    /* Extra spacing for trivia list items */
+    .panel.trackbox ul li {
+        margin-bottom: 0.75rem;   /* extra ruimte tussen weetjes */
+        line-height: 1.7;         /* iets hogere regelafstand binnen elk weetje */
+    }
+
+    .bio-links {
+        margin: 6px 0 14px;
+        font-size: 0.95em;
+    }
+    footer {
+        text-align: center;
+        padding: 18px 12px 28px;
+        background-color: var(--bg);
+        color: #9a92c9;
+        margin-top: 40px;
+        border-top: 2px solid var(--accent);
+    }
+    a { color: var(--accent2); }
+</style>
+</head>
+<body>
+
+<div class="lp-header">
+    <div class="lp-label">
+        <div class="lp-text">
+            <div class="lp-album">Goodbye & Good Riddance</div>
+            <div class="lp-artist">Juice WRLD</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <h2>Tracklist</h2>
+    <div class="vinyl-grid">
+        <div class="panel trackbox">
+            <h3>Kant A</h3>
+            <ul>
+                <li>A1 — Intro – 1:14</li><li>A2 — All Girls Are the Same – 2:48</li><li>A3 — Lucid Dreams – 3:59</li><li>A4 — Lean Wit Me – 2:56</li><li>A5 — Wasted – 4:16</li><li>A6 — I'm Still – 3:13</li><li>A7 — Betrayal (Skit) – 1:04</li><li>A8 — Candles – 3:04</li><li>A9 — Scared of Love – 2:51</li>
+            </ul>
+        </div>
+        <div class="panel trackbox">
+            <h3>Kant B</h3>
+            <ul>
+                <li>B1 — Used To – 2:56</li><li>B2 — Karma (Skit) – 1:15</li><li>B3 — Hurt Me – 2:02</li><li>B4 — Black & White – 3:07</li><li>B5 — Long Gone – 3:07</li><li>B6 — End of the Road – 2:43</li><li>B7 — I'll Be Fine – 4:04</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Biografie</h2>
+    <div class="bio-links">
+        🔗 <a href="https://nl.wikipedia.org/wiki/Juice_WRLD" target="_blank" rel="noopener">Wikipedia – Juice WRLD</a> &nbsp;•&nbsp;
+        <a href="https://en.wikipedia.org/wiki/Goodbye_%26_Good_Riddance" target="_blank" rel="noopener">Wikipedia – Goodbye & Good Riddance</a>
+    </div>
+    <div class="panel">
+        <p><strong>Juice WRLD</strong> (Jarad A. Higgins, 1998–2019) was een Amerikaanse rapper en zanger uit de omgeving van Chicago. Hij werd bekend met een emotioneel open schrijf‑ en zangstijl waarin hiphop, pop‑punk en emo‑invloeden samenkomen. In 2018 brak hij door met onder meer <em>“Lucid Dreams”</em> en het album <em>“Goodbye & Good Riddance”</em>. Kenmerkend was zijn talent om snel te improviseren (freestylen) in de studio, wat hoorbaar is in spontane melodieën en ad‑libs.</p>
+        <p>De vinylpersing waar jij naar verwijst hanteert een 9/7 indeling met “Wasted” op Kant A. Deze pagina weerspiegelt exact die opmaak en titels, zodat je weergave overeenkomt met je fysieke plaat.</p>
+        <p>De songs behandelen thema’s als liefdesverdriet, roem en coping; de productie balanceert trapdrums met melancholische gitaar‑ en synthmotieven. De titel/esthetiek benadrukken het idee van afstand nemen en verdergaan.</p>
+    </div>
+
+    <h2>Trivia (15)</h2>
+    <div class="panel trackbox" style="text-align:left;">
+        <ul>
+            <li>“Lucid Dreams” samplet Sting’s “Shape of My Heart”; Sting ontving naar verluidt 85% van de royalties.</li><li>Veel vocals werden in korte takes opgenomen; Juice WRLD freestyled vaak in plaats van uitgeschreven teksten te gebruiken.</li><li>“All Girls Are the Same” werd eerst een SoundCloud‑hit voordat het op het album belandde en een labeldeal versnelde.</li><li>De oorspronkelijke release was op 23 mei 2018 via Grade A Productions en Interscope Records.</li><li>“Wasted” stond niet op de eerste streamingeditie; het nummer werd later in juli 2018 toegevoegd op heruitgaven.</li><li>De vinylpersing van jouw uitgave heeft 9 nummers op Kant A en 7 op Kant B—een ongewone verdeling voor hiphop‑lp’s.</li><li>“Lucid Dreams” doorbrak in recordtempo de grens van honderden miljoenen streams en passeerde snel de 1 miljard op Spotify.</li><li>De emotionele, melodische stijl beïnvloedde een nieuwe lichting artiesten; o.a. The Kid Laroi werkte later nauw met Grade A.</li><li>Nick Mira is de meest herkenbare producer op de plaat; zijn gitaarloops en drumprogrammering vormen de ruggengraat van meerdere tracks.</li><li>Het albumcover‑concept sluit aan bij het ‘break‑up/voicemail’-motief dat ook in skits zoals “Betrayal” en “Karma” terugkomt.</li><li>“Lean Wit Me” kaart openlijk middelengebruik en herstel aan; het werd later een vast onderdeel in discussies rond Juice WRLD’s thematiek.</li><li>“Black & White” koppelt een donkere hook aan een uitgeklede beat, waardoor de vocal nog directer binnenkomt.</li><li>“Scared of Love” en “Candles” tonen Juice’s pop‑gevoelige kant met zachte synths en gitaaraccenten rond de topline.</li><li>Na zijn overlijden in 2019 klom het album opnieuw in diverse hitlijsten en bleef het langdurig zichtbaar in de Billboard 200.</li><li>De titel “Goodbye & Good Riddance” staat symbool voor het afscheid van toxische relaties en een stap richting een nieuw hoofdstuk.</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2025 Juice WRLD Tribute | Definitieve Vinyl‑layout + LP‑labelkop + concrete weetjes
+</footer>
+</body>
+</html>

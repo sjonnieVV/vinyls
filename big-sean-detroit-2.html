@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Sean – Detroit 2 (2×LP – A/B/C/D)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+        /* Detroit 2 album palette: deep night blue + sky blue accents + gold highlights + subtle purple depth */
+        --bg:#0c1426;           /* deep night blue */
+        --fg:#f4f7fb;           /* soft off-white text */
+        --muted:#cfe2ff;        /* gentle ice-blue headings */
+        --panel:#0e1524;        /* dark navy panel */
+        --ring:rgba(255,255,255,0.12);
+        --accent:#4fa8ff;       /* sky blue accent (primary) */
+        --accent2:#f5b34a;      /* warm gold/orange markers */
+        --accent3:#6c5ce7;      /* purple-blue depth */
+        --glow:rgba(79,168,255,0.35);
+        --grad1: radial-gradient(900px 420px at 50% -10%, rgba(79,168,255,0.22), rgba(245,179,74,0.10) 45%, transparent 70%);
+        --grad2: linear-gradient(135deg, rgba(79,168,255,0.10), rgba(108,92,231,0.08));
+    }
+    *{box-sizing:border-box}
+    body{ margin:0; background:var(--bg); color:var(--fg); font-family:'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell; text-align:center; }
+    a{ color:#b8d9ff }
+    .container{ max-width:1100px; margin:0 auto; padding:22px; }
+
+    /* LP label header */
+    .lp-header{ padding:44px 0 22px; border-bottom:4px solid var(--accent); box-shadow:0 0 28px var(--glow); background:var(--grad1); }
+    .lp-label{
+        width:220px;height:220px;border-radius:50%;margin:0 auto 10px;position:relative;display:grid;place-items:center;
+        background:radial-gradient(closest-side,#0f1a2a 0%, #16243a 68%, #0f1a2a 100%);
+        border:4px solid var(--ring); box-shadow:0 0 34px var(--glow), inset 0 0 42px rgba(0,0,0,.55);
+    }
+    .lp-label::before{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#0f1220 0%, #2b3750 60%, #0f1220 100%);border:2px solid var(--ring)}
+    .lp-text{position:absolute;inset:0;display:grid;place-items:center;padding:28px}
+    .lp-album{font-size:18px;font-weight:700;letter-spacing:.7px;text-shadow:0 0 10px var(--glow)}
+    .lp-artist{font-size:12px;color:var(--muted)}
+
+    h2,h3{ color:var(--muted); border-bottom:2px solid var(--accent); padding-bottom:6px; text-shadow:0 0 10px var(--glow) }
+
+    .panel{
+        background:var(--grad2); border:1px solid var(--ring); border-radius:14px; padding:14px 16px;
+        box-shadow:0 0 20px rgba(0,0,0,.35); text-align:left;
+    }
+    .trackbox{ border-left:6px solid var(--accent); background:#0e1423; }
+
+    .vinyl-grid{ display:grid; grid-template-columns:repeat(2,minmax(260px,1fr)); gap:16px; margin-top:12px; }
+    @media (max-width:800px){ .vinyl-grid{ grid-template-columns:1fr; } }
+
+    ul{ margin:0; padding-left:20px; line-height:1.8 }
+    li::marker{ color:var(--accent2) }
+    .time{ color:#cfe6ff; opacity:.95; font-style:italic }
+
+    .bio{ margin-top:16px }
+    .bio-links{ margin:8px 0 14px; font-size:.95rem; text-align:left }
+    .trivia-list li{ margin-bottom:.85rem; line-height:1.75; }
+
+    footer{ margin-top:36px; padding:18px 12px 28px; border-top:2px solid var(--accent); color:#c8dfff }
+</style>
+</head>
+<body>
+    <div class="lp-header">
+        <div class="lp-label">
+            <div class="lp-text">
+                <div class="lp-album">Detroit 2</div>
+                <div class="lp-artist">Big Sean</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Tracklist — Vinyl (A/B/C/D)</h2>
+        <div class="vinyl-grid">
+            <div class="panel trackbox">
+                <h3>Kant A</h3>
+                <ul>
+                    <li>1 — Why Would I Stop? <span class="time">· 2:32</span></li>
+                    <li>2 — Lucky Me <span class="time">· 4:08</span></li>
+                    <li>3 — Deep Reverence (feat. Nipsey Hussle) <span class="time">· 3:51</span></li>
+                    <li>4 — Wolves (feat. Post Malone) <span class="time">· 3:19</span></li>
+                    <li>5 — Body Language (feat. Ty Dolla $ign &amp; Jhené Aiko) <span class="time">· 3:44</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant B</h3>
+                <ul>
+                    <li>1 — Story by Dave Chappelle <span class="time">· 2:35</span></li>
+                    <li>2 — Harder Than My Demons <span class="time">· 2:11</span></li>
+                    <li>3 — Everything That's Missing (feat. Dwele) <span class="time">· 3:14</span></li>
+                    <li>4 — ZTFO <span class="time">· 2:16</span></li>
+                    <li>5 — Guard Your Heart (feat. Anderson .Paak, Earlly Mac &amp; Wale) <span class="time">· 4:18</span></li>
+                    <li>6 — Respect It (with Hit-Boy feat. Young Thug) <span class="time">· 3:27</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant C</h3>
+                <ul>
+                    <li>1 — Lithuania (feat. Travis Scott) <span class="time">· 3:19</span></li>
+                    <li>2 — Full Circle (feat. Key Wane &amp; Diddy) <span class="time">· 2:58</span></li>
+                    <li>3 — TWENTY88 – Time In <span class="time">· 2:57</span></li>
+                    <li>4 — Story by Erykah Badu <span class="time">· 2:10</span></li>
+                    <li>5 — Feed <span class="time">· 3:02</span></li>
+                    <li>6 — The Baddest <span class="time">· 3:09</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant D</h3>
+                <ul>
+                    <li>1 — Don Life (feat. Lil Wayne) <span class="time">· 3:14</span></li>
+                    <li>2 — Friday Night Cypher (feat. Tee Grizzley, Kash Doll, Payroll Giovanni, 42 Dugg, Boldy James, Drego, Sada Baby, Royce da 5'9&quot; &amp; Eminem) <span class="time">· 9:28</span></li>
+                    <li>3 — Story by Stevie Wonder <span class="time">· 2:13</span></li>
+                    <li>4 — Still I Rise (feat. Dom Kennedy) <span class="time">· 3:07</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Biografie</h2>
+        <div class="panel bio">
+            <p><strong>Detroit 2</strong> (2020) is het vijfde studioalbum van Big Sean en een directe opvolger van zijn gelijknamige 2012‑mixtape. De plaat viert Detroit’s hiphop‑erfgoed met een mix van reflectie, ambitie en community‑spirit. Productie van o.a. Hit‑Boy, No I.D., Mike WiLL Made‑It en Mustard levert een rijk palet van soulvolle samples tot moderne trap‑textures, terwijl gastrollen variëren van Nipsey Hussle en Post Malone tot Travis Scott en Lil Wayne.</p>
+            <p>De vinyluitgave spreidt 21 tracks over 2×LP met drie verhalende interludes (“Story”) door Dave Chappelle, Erykah Badu en Stevie Wonder. Hoogtepunt is de marathonsessie <em>Friday Night Cypher</em> (9:28) die een hele lichting Detroit‑MC’s samenbrengt, van Tee Grizzley tot Eminem. Tussen introspectie (“Lucky Me”, “Everything That’s Missing”) en bangers (“The Baddest”, “Don Life”) voelt <em>Detroit 2</em> als een liefdesbrief aan de stad én een statusupdate van Sean als veteraan met honger.</p>
+        </div>
+
+        <h2>Trivia (15)</h2>
+        <div class="bio-links">
+            🔗 <a href="https://open.spotify.com/album/2Z1LpejVEpD3O8C3MEU6qX" target="_blank" rel="noopener">Spotify – Detroit 2</a>
+            &nbsp;•&nbsp;
+            🔗 <a href="https://en.wikipedia.org/wiki/Detroit_2" target="_blank" rel="noopener">Wikipedia – Detroit 2</a>
+        </div>
+        <div class="panel">
+            <ul class="trivia-list">
+                <li>De 2×LP‑vinyl is ingedeeld in vier kanten (A–D) met 5/6/6/4 tracks om dynamiek en groefruimte te behouden.</li>
+                <li>De interludes “Story” door Dave Chappelle, Erykah Badu en Stevie Wonder koppelen muziek aan herinneringen aan Detroit.</li>
+                <li>“Deep Reverence” bevat een postume bijdrage van Nipsey Hussle en werd genomineerd bij de BET Hip Hop Awards.</li>
+                <li>“Friday Night Cypher” brengt negen Detroit‑MC’s samen op één track van 9:28 met meerdere beat‑switches.</li>
+                <li>“Lithuania” met Travis Scott werd een van de meest gestreamde tracks en kreeg een video met psychedelische visuals.</li>
+                <li>Sean’s duo‑project TWENTY88 met Jhené Aiko duikt hier op met “Time In”.</li>
+                <li>Producers Hit‑Boy en No I.D. bewaken de brug tussen soulful storytelling en moderne trap‑energie.</li>
+                <li>“Don Life” herinterpreteert een sample van “Human Nature” via een Flip door Key Wane (uit Sean’s kamp).</li>
+                <li>Het album kwam uit op 4 september 2020 via GOOD Music/Def Jam en debuteerde op #1 in de Billboard 200.</li>
+                <li>Op de vinylachterhoes staan de volledige credits per kant; deze pagina volgt die A/B/C/D‑volgorde en speeltijden.</li>
+                <li>“Guard Your Heart” verenigt Anderson .Paak, Wale en Earlly Mac rond een upliftende hook en live‑achtige drums.</li>
+                <li>“The Baddest” en “ZTFO” leveren korte, energieke shots tussen langer opgebouwde cuts als “Full Circle”.</li>
+                <li>“Everything That’s Missing” met Dwele legt de link naar Detroit’s neo‑soultraditie.</li>
+                <li>De plaat verwijst vaker naar Sean’s persoonlijke groei (gezondheid, mentorship, financiële discipline) — “Lucky Me” is exemplarisch.</li>
+                <li>De gatefold‑edition plaatst het collage‑artwork centraal; dit kleurpalet is daarop afgestemd (blauwe lucht + gouden highlights).</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Big Sean — Detroit 2 — vinyl‑indeling (A/B/C/D) + tijden, bio & trivia — blauwe lucht‑thema
+    </footer>
+</body>
+</html>

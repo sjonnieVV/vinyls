@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juice WRLD – Death Race for Love (2×LP – A/B/C/D)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+        --bg:#0a0a0f;
+        --fg:#f2f3f7;
+        --muted:#cfd3e1;
+        --panel:#121222;
+        --ring:rgba(255,255,255,0.12);
+        --accent:#ff2e2e;      /* racing red */
+        --accent2:#7b8cff;     /* cool blue highlight */
+        --glow:rgba(255,46,46,0.4);
+    }
+    *{box-sizing:border-box}
+    body{
+        margin:0;
+        background:var(--bg);
+        color:var(--fg);
+        font-family:'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell;
+        text-align:center;
+    }
+    a{color:var(--accent2)}
+    .container{max-width:1100px;margin:0 auto;padding:22px}
+    /* LP label header (static, not sticky) */
+    .lp-header{
+        padding:44px 0 22px;
+        border-bottom:4px solid var(--accent);
+        box-shadow:0 0 22px var(--glow);
+        background: radial-gradient(900px 420px at 50% -10%, rgba(255,46,46,0.15), transparent 60%);
+    }
+    .lp-label{
+        width:220px;height:220px;border-radius:50%;
+        margin:0 auto 10px;position:relative;display:grid;place-items:center;
+        background:radial-gradient(closest-side,#0e0e18 0%,#1b1b2e 68%,#0e0e18 100%);
+        border:4px solid var(--ring);
+        box-shadow:0 0 34px var(--glow), inset 0 0 40px rgba(0,0,0,.55);
+    }
+    .lp-label::before{
+        content:"";position:absolute;width:22px;height:22px;border-radius:50%;
+        background:radial-gradient(circle,#0e0e12 0%,#2b2b33 60%,#0e0e12 100%);
+        border:2px solid var(--ring);
+    }
+    .lp-text{position:absolute;inset:0;display:grid;place-items:center;padding:28px}
+    .lp-album{font-size:18px;font-weight:700;letter-spacing:.7px}
+    .lp-artist{font-size:12px;color:var(--muted)}
+    h2,h3{
+        color:var(--muted);
+        border-bottom:2px solid var(--accent);
+        padding-bottom:6px;
+        text-shadow:0 0 10px var(--glow);
+    }
+    .vinyl-grid{
+        display:grid;
+        grid-template-columns:repeat(2,minmax(260px,1fr));
+        gap:16px;
+        margin-top:12px;
+    }
+    @media (max-width:820px){ .vinyl-grid{grid-template-columns:1fr} }
+    .panel{
+        background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.00));
+        border:1px solid var(--ring);
+        border-radius:14px;
+        padding:14px 16px;
+        box-shadow:0 0 20px rgba(0,0,0,0.35);
+        text-align:left;
+    }
+    .trackbox{border-left:6px solid var(--accent);background:#0f0f1f}
+    ul{margin:0;padding-left:20px;line-height:1.8}
+    li::marker{color:var(--accent2)}
+    .time{color:#b9c2ff;opacity:.95;font-style:italic}
+    .bio{margin-top:16px}
+    .bio-links{margin:6px 0 14px;font-size:.95rem;text-align:left}
+    /* Extra spacing for trivia items */
+    .trivia-list li{ margin-bottom: 0.75rem; line-height: 1.7; }
+    footer{margin-top:36px;padding:18px 12px 28px;border-top:2px solid var(--accent);color:#9aa6ff}
+</style>
+</head>
+<body>
+    <div class="lp-header">
+        <div class="lp-label">
+            <div class="lp-text">
+                <div class="lp-album">Death Race for Love</div>
+                <div class="lp-artist">Juice WRLD</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Tracklist — 2×LP (A/B/C/D)</h2>
+        <div class="vinyl-grid">
+            <div class="panel trackbox">
+                <h3>Kant A</h3>
+                <ul>
+                    <li>1 — Empty <span class="time">· 4:08</span></li>
+                    <li>2 — Maze <span class="time">· 2:24</span></li>
+                    <li>3 — HeMotions <span class="time">· 2:40</span></li>
+                    <li>4 — Demonz (feat. Brent Faiyaz) – Interlude <span class="time">· 1:21</span></li>
+                    <li>5 — Fast <span class="time">· 3:29</span></li>
+                    <li>6 — Hear Me Calling <span class="time">· 3:09</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant B</h3>
+                <ul>
+                    <li>1 — Big <span class="time">· 3:14</span></li>
+                    <li>2 — Robbery <span class="time">· 4:00</span></li>
+                    <li>3 — Flaws and Sins <span class="time">· 3:10</span></li>
+                    <li>4 — Feeling <span class="time">· 3:20</span></li>
+                    <li>5 — Syphilis <span class="time">· 2:10</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant C</h3>
+                <ul>
+                    <li>1 — Who Shot Cupid? <span class="time">· 3:34</span></li>
+                    <li>2 — Ring Ring (feat. Rvssian &amp; Clever) <span class="time">· 3:05</span></li>
+                    <li>3 — Desire <span class="time">· 3:09</span></li>
+                    <li>4 — Out My Way <span class="time">· 2:38</span></li>
+                    <li>5 — The Bees Knees <span class="time">· 5:25</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant D</h3>
+                <ul>
+                    <li>1 — ON GOD (feat. Young Thug) <span class="time">· 3:30</span></li>
+                    <li>2 — 10 Feet <span class="time">· 3:32</span></li>
+                    <li>3 — Won’t Let Go <span class="time">· 2:51</span></li>
+                    <li>4 — She’s The One <span class="time">· 3:07</span></li>
+                    <li>5 — Rider <span class="time">· 3:12</span></li>
+                    <li>6 — Make Believe <span class="time">· 2:22</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Biografie</h2>
+        <div class="panel bio">
+            <p><strong>Death Race for Love</strong> (2019) is Juice WRLD’s tweede studioalbum en de directe opvolger van zijn doorbraak. Het project werd grotendeels in korte tijd geschreven en opgenomen, waarbij Juice zijn freestyle‑benadering gebruikte om melodieën en teksten spontaan vast te leggen. Thematisch rijdt het album — in race‑game esthetiek — door thema’s van liefde, roem, verslaving en zelfreflectie. De productie mengt gitaar‑gedreven trap, donkere 808’s en snellere pop‑punkenergie; singles als “Robbery”, “Hear Me Calling” en “Fast” tonen zijn instinct voor oorworm‑hooks en emotionele directheid.</p>
+            <p>De plaat debuteerde op #1 in de Verenigde Staten en verstevigde Juice’s status als een van de defining voices van de emo‑rapgeneratie. Met 22 nummers is het album breed in kleur en tempo, van introspectie (“Empty”, “HeMotions”) naar pure energie (“Syphilis”, “Out My Way”) en langere, experimentele wendingen (“The Bees Knees”). De gastbijdragen (Young Thug, Brent Faiyaz, Clever) en producers (o.a. Nick Mira) sluiten aan op Juice’s hybridestijl tussen rap en alternatieve pop. <em>Death Race for Love</em> fungeert zo als creatief snapshot van een artiest op topsnelheid, balancerend tussen kwetsbaarheid en bravoure.</p>
+        </div>
+
+        <h2>Trivia (15)</h2>
+        <div class="bio-links">🔗 <a href="https://en.wikipedia.org/wiki/Death_Race_for_Love" target="_blank" rel="noopener">Wikipedia – Death Race for Love</a></div>
+        <div class="panel">
+            <ul class="trivia-list">
+                <li>De titel en cover verwijzen naar klassieke arcade‑races; de liefde als wedstrijd vol obstakels.</li>
+                <li>Veel melodieën ontstonden uit lange freestyle‑takes; daarna werden de beste stukken uitgewerkt.</li>
+                <li>“Robbery” werd een van de grootste hits, mede door de emotionele pianolijn en verhalende videoclip.</li>
+                <li>“Hear Me Calling” mixt dancehall‑invloeden met Juice’s kenmerkende melodische rap.</li>
+                <li>“Fast” legt de link tussen roem en het versnellende, soms desoriënterende levenstempo.</li>
+                <li>“Demonz” met Brent Faiyaz is als interlude opgenomen en voert de spanning op richting kantwissel.</li>
+                <li>“The Bees Knees” is een van de langste tracks uit Juice’s catalogus en schakelt halverwege van vibe.</li>
+                <li>Producer Nick Mira is opnieuw een sleutelspeler en bewaakt de herkenbare Juice‑sound.</li>
+                <li>De vinyl‑indeling (A/B/C/D) spreidt bangers en introspectieve tracks voor een betere flow per kant.</li>
+                <li>“Ring Ring” brengt Rvssian en Clever samen voor een melancholische, radiovriendelijke hook.</li>
+                <li>De wisselwerking tussen gitaarloops en 808’s is een handtekening die door veel tracks terugkeert.</li>
+                <li>Het album werd in korte, intensieve sessies afgerond, wat je hoort aan de spontane zanglijnen.</li>
+                <li>“ON GOD” met Young Thug voegt een zuidelijke trapedge toe aan de tweede helft van de plaat.</li>
+                <li>De thematiek van kwetsbaarheid tegenover stoerheid is een rode draad door het hele album.</li>
+                <li>De combinatie van lange tracklist en sterke singles zorgde voor een #1‑debuut in de VS.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Juice WRLD Vinyl — Death Race for Love — LP-labelkop + volledige tracklist met tijden, bio & trivia
+    </footer>
+</body>
+</html>

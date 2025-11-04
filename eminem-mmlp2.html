@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eminem – The Marshall Mathers LP 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+        /* Closer to the MMLP2 cover: weathered wood, muted pine, sepia-tan, desaturated browns */
+        --bg:#13110f;           /* deep brown-charcoal */
+        --fg:#efece6;           /* warm off-white text */
+        --muted:#d5d0c5;        /* parchment heading */
+        --panel:#161410;        /* dark panel */
+        --ring:rgba(255,255,255,0.10);
+        --accent:#5f7d69;       /* muted pine green */
+        --accent2:#cdb589;      /* sepia-tan markers */
+        --accent3:#8a6b4a;      /* worn wood brown */
+        --glow:rgba(95,125,105,0.28);
+        --grad1: radial-gradient(900px 420px at 50% -10%, rgba(95,125,105,0.18), rgba(205,181,137,0.10) 45%, transparent 70%);
+        --grad2: linear-gradient(135deg, rgba(95,125,105,0.10), rgba(138,107,74,0.07));
+    }
+    *{box-sizing:border-box}
+    body{
+        margin:0; background:var(--bg); color:var(--fg);
+        font-family:'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell;
+        text-align:center; position:relative; overflow-x:hidden;
+        animation: bodyFade .7s ease-out both;
+    }
+    @keyframes bodyFade { from { opacity:0; transform:translateY(6px) } to { opacity:1; transform:none } }
+
+    /* Subtle full-page cover background via remote URL (no local file needed) */
+    .cover-bg{
+        position:fixed; inset:0; z-index:-2;
+        background-image:url('https://upload.wikimedia.org/wikipedia/en/8/87/The_Marshall_Mathers_LP_2.png');
+        background-size:cover; background-position:center;
+        filter:grayscale(60%) blur(6px) contrast(1.05) saturate(0.85);
+        opacity:0.18;
+    }
+    .cover-overlay{
+        position:fixed; inset:0; z-index:-1;
+        background:radial-gradient(1200px 520px at 50% -10%, rgba(0,0,0,0.35), transparent 55%),
+                   linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.10));
+    }
+
+    a{ color:#d7e7d7 }
+    .container{ max-width:1100px; margin:0 auto; padding:22px; }
+
+    /* LP label header */
+    .lp-header{ padding:44px 0 22px; border-bottom:4px solid var(--accent); box-shadow:0 0 28px var(--glow); background:var(--grad1); }
+    .lp-label{
+        width:220px;height:220px;border-radius:50%;margin:0 auto 10px;position:relative;display:grid;place-items:center;
+        background:radial-gradient(closest-side,#17140f 0%, #241f19 68%, #17140f 100%);
+        border:4px solid var(--ring); box-shadow:0 0 34px var(--glow), inset 0 0 42px rgba(0,0,0,.55);
+        animation: labelPop .6s ease-out both .15s;
+    }
+    @keyframes labelPop { from { transform:scale(.96); opacity:.6 } to { transform:none; opacity:1 } }
+    .lp-label::before{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#0f1411 0%, #2a3c33 60%, #0f1411 100%);border:2px solid var(--ring)}
+    .lp-text{position:absolute;inset:0;display:grid;place-items:center;padding:28px}
+    .lp-album{font-size:18px;font-weight:700;letter-spacing:.7px;text-shadow:0 0 10px var(--glow)}
+    .lp-artist{font-size:12px;color:var(--muted)}
+
+    h2,h3{ color:var(--muted); border-bottom:2px solid var(--accent); padding-bottom:6px; text-shadow:0 0 10px var(--glow) }
+
+    .panel{
+        background:var(--grad2); border:1px solid var(--ring); border-radius:14px; padding:14px 16px;
+        box-shadow:0 0 20px rgba(0,0,0,.35); text-align:left;
+        animation: cardFade .7s ease-out both .1s;
+    }
+    @keyframes cardFade { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:none } }
+    .trackbox{ border-left:6px solid var(--accent); background:#14120f; }
+
+    .vinyl-grid{ display:grid; grid-template-columns:repeat(2,minmax(260px,1fr)); gap:16px; margin-top:12px; }
+    @media (max-width:800px){ .vinyl-grid{ grid-template-columns:1fr; } }
+
+    ul{ margin:0; padding-left:20px; line-height:1.8 }
+    li::marker{ color:var(--accent2) }
+    .time{ color:#e5d4b6; opacity:.95; font-style:italic }
+
+    .bio{ margin-top:16px }
+    .bio-links{ margin:8px 0 14px; font-size:.95rem; text-align:left }
+    .trivia-list li{ margin-bottom:.85rem; line-height:1.75; }
+
+    /* Visible cover card (remote URL) */
+    .cover-card{
+        width:100%; display:grid; place-items:center; margin:10px auto 22px;
+        animation: cardFade .7s ease-out both .2s;
+    }
+    .cover-card img{
+        width:320px; max-width:80vw; height:auto; border-radius:12px;
+        border:1px solid var(--ring);
+        box-shadow:0 12px 40px rgba(0,0,0,.45);
+    }
+
+    footer{ margin-top:36px; padding:18px 12px 28px; border-top:2px solid var(--accent); color:#e4ddcf }
+</style>
+</head>
+<body>
+    <!-- Blurred cover as background (remote URL) -->
+    <div class="cover-bg" aria-hidden="true"></div>
+    <div class="cover-overlay" aria-hidden="true"></div>
+
+    <div class="lp-header">
+        <div class="lp-label">
+            <div class="lp-text">
+                <div class="lp-album">The Marshall Mathers LP 2</div>
+                <div class="lp-artist">Eminem</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Visible cover (remote URL, no local file needed) -->
+        <div class="cover-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/87/The_Marshall_Mathers_LP_2.png" alt="Albumcover: The Marshall Mathers LP 2 (Eminem)">
+        </div>
+
+        <h2>Tracklist — Vinyl (A/B/C/D)</h2>
+        <div class="vinyl-grid">
+            <div class="panel trackbox">
+                <h3>Kant A</h3>
+                <ul>
+                    <li>1 — Bad Guy <span class="time">· 7:14</span></li>
+                    <li>2 — Parking Lot (Skit) <span class="time">· 0:55</span></li>
+                    <li>3 — Rhyme or Reason <span class="time">· 5:01</span></li>
+                    <li>4 — So Much Better <span class="time">· 4:20</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant B</h3>
+                <ul>
+                    <li>1 — Survival <span class="time">· 4:32</span></li>
+                    <li>2 — Legacy <span class="time">· 4:56</span></li>
+                    <li>3 — Asshole (feat. Skylar Grey) <span class="time">· 4:10</span></li>
+                    <li>4 — Berzerk <span class="time">· 3:58</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant C</h3>
+                <ul>
+                    <li>1 — Rap God <span class="time">· 6:04</span></li>
+                    <li>2 — Brainless <span class="time">· 4:46</span></li>
+                    <li>3 — Stronger Than I Was <span class="time">· 5:36</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant D</h3>
+                <ul>
+                    <li>1 — The Monster (feat. Rihanna) <span class="time">· 4:10</span></li>
+                    <li>2 — So Far... <span class="time">· 5:18</span></li>
+                    <li>3 — Love Game (feat. Kendrick Lamar) <span class="time">· 4:56</span></li>
+                    <li>4 — Headlights (feat. Nate Ruess) <span class="time">· 5:43</span></li>
+                    <li>5 — Evil Twin <span class="time">· 5:48</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Biografie</h2>
+        <div class="panel bio">
+            <p><strong>The Marshall Mathers LP 2</strong> (2013) fungeert als thematische opvolger van Eminems klassieker uit 2000. Met executive producers <em>Dr. Dre</em> en <em>Rick Rubin</em> graaft het album in nostalgie én vernieuwing: rock‑samples, old‑school breakbeats en hypermoderne flows. De plaat bundelt hits als “Berzerk”, “Rap God”, “The Monster” en “Headlights”, en zweeft tussen branie, zelfreflectie en intertekstuele knipogen naar Em’s eigen mythologie.</p>
+            <p>Qua thematiek balanceert MMLP2 tussen eerbetoon en heruitvinding; teksten keren terug naar personages en motieven uit Em’s vroege werk (zoals “Stan” in “Bad Guy”), maar nu vanuit het perspectief van een oudere, zelfkritische verteller. De combinatie van agressieve punchlines, complexe cadanswissels en melodische hooks maakt het album zowel technisch als emotioneel gelaagd.</p>
+        </div>
+
+        <h2>Trivia (15)</h2>
+        <div class="bio-links">
+            🔗 <a href="https://open.spotify.com/album/3WFTGIO6E3Xh4paEOBY9OU" target="_blank" rel="noopener">Spotify – The Marshall Mathers LP 2</a>
+            &nbsp;•&nbsp;
+            🔗 <a href="https://en.wikipedia.org/wiki/The_Marshall_Mathers_LP_2" target="_blank" rel="noopener">Wikipedia – The Marshall Mathers LP 2</a>
+        </div>
+        <div class="panel">
+            <ul class="trivia-list">
+                <li>“Bad Guy” vervolgt het verhaal van “Stan” — ditmaal vanuit het perspectief van Stans broer Matthew, wat de mythe rond dat nummer verdiept.</li>
+                <li>“Rap God” demonstreert Em’s technische piek met razendsnelle syllabedichtheid en flow‑wissels binnen één couplet.</li>
+                <li>Rick Rubin bracht een rauwe, old‑school energie in “Berzerk”, inclusief Beastie Boys‑achtige productieknipogen.</li>
+                <li>“Headlights” fungeert als publieke verzoening met Em’s moeder en herkadert eerdere songs als “Cleaning Out My Closet”.</li>
+                <li>“Rhyme or Reason” sampelt The Zombies’ “Time of the Season” en speelt een humoristisch vader‑zoon rollenspel in de lyrics.</li>
+                <li>“So Far...” leunt op Joe Walsh’ “Life’s Been Good” en zet Em’s beroemde zelfspot centraal.</li>
+                <li>“Love Game” (met Kendrick Lamar) verenigt twee generaties woordkunst en graaft in sixties‑pop via de “Game of Love”-sample.</li>
+                <li>“Legacy” reflecteert op pesten en outsider‑gevoel, en hoe rapvaardigheid een uitweg bood.</li>
+                <li>“Brainless” koppelt donkere humor aan introspectie over mentale gezondheid en impulsiviteit.</li>
+                <li>“The Monster” herenigt Eminem met Rihanna; de hook contrasteert introspectie met popgevoelige melodie.</li>
+                <li>“Survival” werd gelanceerd samen met de gamecampagne voor <em>Call of Duty: Ghosts</em>.</li>
+                <li>De lyrics zitten vol zelfreferenties, punchlines en internal rhyme‑structuren die bij herluisteren nieuwe lagen onthullen.</li>
+                <li>Em wisselt tussen persona’s (Marshall/Eminem/Slim Shady) om perspectief en toon te sturen binnen één album.</li>
+                <li>Productieteam met o.a. Dr. Dre, Rick Rubin en Alex da Kid zorgt voor een brug tussen rock‑invloeden en moderne 808‑klank.</li>
+                <li>Het album behaalde meerdere prijzen/nominaties (o.a. Grammy <strong>Best Rap Album</strong>), en versterkte Em’s status als technische benchmark.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Eminem — The Marshall Mathers LP 2 — albumkleur‑thema + cover (achtergrond & kaart) + subtiele fade‑in
+    </footer>
+</body>
+</html>

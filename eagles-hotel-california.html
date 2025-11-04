@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eagles – Hotel California (Vinyl A/B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+        /* Album-inspired palette: desert night + golden signage + sunset coral + teal dome */
+        --bg:#0e1519;           /* deep teal/blue night */
+        --fg:#f6f4ee;           /* warm off-white text */
+        --muted:#d7e8ef;        /* pale sky heading */
+        --panel:#121b20;        /* dark panel */
+        --ring:rgba(255,255,255,0.12);
+        --accent:#d8b86a;       /* hotel gold */
+        --accent2:#ff9466;      /* sunset coral (markers) */
+        --accent3:#6fb6d6;      /* sky/teal accent */
+        --glow:rgba(216,184,106,0.35);
+        --grad1: radial-gradient(900px 420px at 50% -10%, rgba(111,182,214,0.18), rgba(216,184,106,0.10) 45%, transparent 70%);
+        --grad2: linear-gradient(135deg, rgba(216,184,106,0.08), rgba(111,182,214,0.08));
+    }
+    *{box-sizing:border-box}
+    body{ margin:0; background:var(--bg); color:var(--fg); font-family:'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell; text-align:center; }
+    a{ color:#bfe8ff }
+    .container{ max-width:1100px; margin:0 auto; padding:22px; }
+
+    /* LP label header */
+    .lp-header{ padding:44px 0 22px; border-bottom:4px solid var(--accent); box-shadow:0 0 28px var(--glow); background:var(--grad1); }
+    .lp-label{
+        width:220px;height:220px;border-radius:50%;margin:0 auto 10px;position:relative;display:grid;place-items:center;
+        background:radial-gradient(closest-side,#0f1b22 0%, #1b2a31 68%, #0f1b22 100%);
+        border:4px solid var(--ring); box-shadow:0 0 34px var(--glow), inset 0 0 42px rgba(0,0,0,.55);
+    }
+    .lp-label::before{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#10161c 0%, #2a3a44 60%, #10161c 100%);border:2px solid var(--ring)}
+    .lp-text{position:absolute;inset:0;display:grid;place-items:center;padding:28px}
+    .lp-album{font-size:18px;font-weight:700;letter-spacing:.7px;text-shadow:0 0 10px var(--glow)}
+    .lp-artist{font-size:12px;color:var(--muted)}
+
+    h2,h3{ color:var(--muted); border-bottom:2px solid var(--accent); padding-bottom:6px; text-shadow:0 0 10px var(--glow) }
+
+    .panel{
+        background:var(--grad2); border:1px solid var(--ring); border-radius:14px; padding:14px 16px;
+        box-shadow:0 0 20px rgba(0,0,0,.35); text-align:left;
+    }
+    .trackbox{ border-left:6px solid var(--accent); background:#0f171c; }
+
+    .vinyl-grid{ display:grid; grid-template-columns:repeat(2,minmax(260px,1fr)); gap:16px; margin-top:12px; }
+    @media (max-width:800px){ .vinyl-grid{ grid-template-columns:1fr; } }
+
+    ul{ margin:0; padding-left:20px; line-height:1.8 }
+    li::marker{ color:var(--accent2) }
+    .time{ color:#e9d8a1; opacity:.95; font-style:italic }
+
+    .bio{ margin-top:16px }
+    .bio-links{ margin:8px 0 14px; font-size:.95rem; text-align:left }
+    .trivia-list li{ margin-bottom:.85rem; line-height:1.75; }
+
+    footer{ margin-top:36px; padding:18px 12px 28px; border-top:2px solid var(--accent); color:#e9e1cc }
+</style>
+</head>
+<body>
+    <div class="lp-header">
+        <div class="lp-label">
+            <div class="lp-text">
+                <div class="lp-album">Hotel California</div>
+                <div class="lp-artist">Eagles</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Tracklist — Vinyl (A/B)</h2>
+        <div class="vinyl-grid">
+            <div class="panel trackbox">
+                <h3>Kant A</h3>
+                <ul>
+                    <li>1 — Hotel California <span class="time">· 6:30</span></li>
+                    <li>2 — New Kid in Town <span class="time">· 5:04</span></li>
+                    <li>3 — Life in the Fast Lane <span class="time">· 4:46</span></li>
+                    <li>4 — Wasted Time <span class="time">· 4:55</span></li>
+                </ul>
+            </div>
+            <div class="panel trackbox">
+                <h3>Kant B</h3>
+                <ul>
+                    <li>1 — Wasted Time (Reprise) <span class="time">· 1:23</span></li>
+                    <li>2 — Victim of Love <span class="time">· 4:11</span></li>
+                    <li>3 — Pretty Maids All in a Row <span class="time">· 3:58</span></li>
+                    <li>4 — Try and Love Again <span class="time">· 5:10</span></li>
+                    <li>5 — The Last Resort <span class="time">· 7:28</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Biografie</h2>
+        <div class="panel bio">
+            <p><strong>Hotel California</strong> (1976) is het zesde album van de Eagles en geldt als een hoeksteen van de Amerikaanse rock uit de jaren zeventig. Het album markeert de overgang van country‑rock naar een donkerder, gelaagder geluid, mede dankzij de komst van <em>Joe Walsh</em>, die <em>Bernie Leadon</em> verving. Met hits als “Hotel California”, “New Kid in Town” en “Life in the Fast Lane” levert de band een mix van melodische songwriting, meerstemmige vocalen en virtuoze twin‑gitaren.</p>
+            <p>Thematisch verkent de plaat de verleiding en leegte van luxe en roem in het 70’s‑Californië. De titeltrack groeide uit tot een rockklassieker met lange gitaarcoda, terwijl “The Last Resort” een ambitieuze, kritische afsluiter vormt. <em>Hotel California</em> werd wereldwijd multi‑platinum en is blijvend aanwezig in best‑of‑lijsten; de single “Hotel California” won de Grammy voor <em>Record of the Year</em> (1978).</p>
+        </div>
+
+        <h2>Trivia (15)</h2>
+        <div class="bio-links">
+            🔗 <a href="https://open.spotify.com/album/40riOy7x9W7GXjyGp4pjAv" target="_blank" rel="noopener">Spotify – Hotel California</a>
+            &nbsp;•&nbsp;
+            🔗 <a href="https://nl.wikipedia.org/wiki/Hotel_California_(album)" target="_blank" rel="noopener">Wikipedia – Hotel California</a>
+        </div>
+        <div class="panel">
+            <ul class="trivia-list">
+                <li>De beroemde **akkoordenreeks** van “Hotel California” werd aangeleverd door <em>Don Felder</em> op een 12‑snarige gitaar‑demo; Henley en Frey schreven er melodie en tekst op.</li>
+                <li>De **twin‑gitaarsolo** aan het einde (Walsh + Felder) wordt geregeld genoemd als een van de beste solos in rocklijstjes.</li>
+                <li>“New Kid in Town” kwam op **#1** in de Billboard Hot 100 (1977) en contrasteert met de donkere titeltrack door zijn warme harmonieën.</li>
+                <li>“Life in the Fast Lane” kreeg zijn naam nadat Glenn Frey in de auto een chauffeur die wild reed “life in the fast lane” hoorde zeggen — de riff kwam van Joe Walsh.</li>
+                <li>“The Last Resort” is Don Henley’s maatschappijkritiek op milieuvernietiging en ongebreidelde expansie; een van de meest ambitieuze Eagles‑arrangementen.</li>
+                <li>De **reprise** van “Wasted Time” opent kant B als symfonische reflectie op kant A — strijkers georkestreerd door Jim Ed Norman.</li>
+                <li>“Victim of Love” staat bekend om zijn **live‑in‑studio** benadering: de band nam de instrumentale basis in één take op.</li>
+                <li>De cover toont het **Beverly Hills Hotel** in schemerlicht met palm silhouettes; het werd door de band gekozen als symbool voor glamour vs. desillusie.</li>
+                <li>Met de komst van **Joe Walsh** verschoof de band verder naar rock; zijn slide‑ en leadwerk hoor je door het hele album.</li>
+                <li>Het album won de Grammy voor **Record of the Year** (voor de single “Hotel California”) in **1978**.</li>
+                <li>“Try and Love Again” is geschreven en gezongen door **Randy Meisner**; het nummer benadrukt de meerstemmige bandidentiteit.</li>
+                <li>De regel “You can check out any time you like, but you can never leave” groeide uit tot popcultureel citaat over **decadentie en gevangenschap**.</li>
+                <li>De plaat markeert een **stijgende productiebudget en studioperfectionisme** vergeleken met hun vroege country‑rockplaten.</li>
+                <li>In latere jaren voerden de Eagles het album vaak integraal op tour, met een extra uitgesponnen “Hotel California”‑coda.</li>
+                <li>Het album staat consequent in lijsten van **meest verkochte en invloedrijke** rockalbums; de songs blijven radio‑evergreens.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Eagles — Hotel California — vinyl‑indeling (A/B) + tijden, bio & trivia
+    </footer>
+</body>
+</html>

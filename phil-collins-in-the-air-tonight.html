@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phil Collins – In the Air Tonight (European Single LP)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
+<style>
+  :root{
+    --bg:#0e1319;
+    --fg:#b7c9e3;
+    --muted:#d0ddf0;
+    --panel:#111820;
+    --ring:rgba(183,201,227,.16);
+    --accent:#8fb1dd;
+    --accent2:#b7c9e3;
+    --grad1: radial-gradient(900px 420px at 50% -10%, rgba(143,177,221,.15), transparent 55%);
+    --grad2: linear-gradient(135deg, rgba(143,177,221,.08), rgba(60,78,100,.08));
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell;
+    text-align:center; position:relative; overflow-x:hidden;
+    animation: fade .7s ease-out both;
+  }
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  /* Misty blurred cover background (Wikimedia thumb URL) */
+  .cover-bg{ position:fixed; inset:0; z-index:-2;
+    background-image:url('https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Phil_Collins_-_In_the_Air_Tonight_single_cover.jpg/640px-Phil_Collins_-_In_the_Air_Tonight_single_cover.jpg');
+    background-size:cover; background-position:center;
+    filter:grayscale(55%) blur(9px) contrast(1.04) saturate(.9) hue-rotate(190deg);
+    opacity:.22;
+  }
+  .cover-overlay{ position:fixed; inset:0; z-index:-1; background:
+    radial-gradient(1200px 520px at 50% -10%, rgba(7,12,18,.55), transparent 55%),
+    linear-gradient(0deg, rgba(10,16,24,.55), rgba(10,16,24,.18));
+  }
+
+  a{ color:#d7e6ff }
+  .container{ max-width:1100px; margin:0 auto; padding:22px }
+
+  .lp-header{ padding:36px 0 18px; border-bottom:1px solid var(--accent); background:var(--grad1) }
+  .lp-label{ width:180px;height:180px;border-radius:50%;margin:0 auto 8px;position:relative;display:grid;place-items:center;
+             background:radial-gradient(closest-side,#0e1218 0%, #151b24 68%, #0e1218 100%);
+             border:1px solid var(--ring); box-shadow:0 8px 28px rgba(0,0,0,.35) }
+  .lp-label::before{content:"";position:absolute;width:18px;height:18px;border-radius:50%;
+                    background:radial-gradient(circle,#0b0f15 0%, #223143 60%, #0b0f15 100%);
+                    border:1px solid var(--ring)}
+  .lp-text{position:absolute;inset:0;display:grid;place-items:center;padding:24px}
+  .lp-album{font-size:16px;font-weight:700;letter-spacing:.7px}
+  .lp-artist{font-size:12px;color:var(--muted)}
+
+  h2,h3{ color:var(--muted); border-bottom:1px solid var(--accent); padding-bottom:6px; margin-top:18px }
+
+  .panel{ background:var(--grad2); border:1px solid var(--ring); border-radius:14px; padding:14px 16px;
+          box-shadow:0 0 20px rgba(0,0,0,.35); text-align:left; }
+  .trackbox{ border-left:4px solid var(--accent); background:#0f151c }
+
+  .vinyl-grid{ display:grid; grid-template-columns:repeat(2,minmax(260px,1fr)); gap:16px; margin-top:12px }
+  @media (max-width:800px){ .vinyl-grid{ grid-template-columns:1fr } }
+
+  ul{ margin:0; padding-left:20px; line-height:1.8 }
+  li::marker{ color:var(--accent2) }
+  .time{ color:#d0ddf0; opacity:.95; font-style:italic }
+
+  .bio{ margin-top:16px }
+  .bio-links{ margin:8px 0 14px; font-size:.95rem; text-align:left }
+  .trivia-list li{ margin-bottom:.85rem; line-height:1.75 }
+
+  .cover-card{ width:100%; display:grid; place-items:center; margin:10px auto 22px }
+  .cover-card img{ width:320px; max-width:80vw; height:auto; border-radius:12px;
+                   border:1px solid var(--ring); box-shadow:0 12px 40px rgba(0,0,0,.45) }
+
+  footer{ margin-top:36px; padding:18px 12px 28px; border-top:1px solid var(--accent); color:#c6d5eb }
+</style>
+</head>
+<body>
+  <div class="cover-bg" aria-hidden="true"></div>
+  <div class="cover-overlay" aria-hidden="true"></div>
+
+  <div class="lp-header">
+    <div class="lp-label">
+      <div class="lp-text">
+        <div class="lp-album">In the Air Tonight</div>
+        <div class="lp-artist">Phil Collins</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cover-card">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Phil_Collins_-_In_the_Air_Tonight_single_cover.jpg/640px-Phil_Collins_-_In_the_Air_Tonight_single_cover.jpg"
+        alt="Europese singlehoes: Phil Collins – In the Air Tonight"
+        referrerpolicy="no-referrer"
+        loading="eager"
+        decoding="async">
+    </div>
+
+    <h2>Tracklist — Single LP (A/B)</h2>
+    <div class="vinyl-grid">
+      <div class="panel trackbox">
+        <h3>Kant A</h3>
+        <ul>
+          <li>1 — In the Air Tonight (Album Version) <span class="time">· 5:32</span></li>
+        </ul>
+      </div>
+      <div class="panel trackbox">
+        <h3>Kant B</h3>
+        <ul>
+          <li>1 — The Roof Is Leaking <span class="time">· 3:16</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Uitgebreide biografie (Phil Collins)</h2>
+    <div class="panel bio">
+      <p><strong>Phil Collins</strong> (1951) is drummer, zanger, songwriter en producer, bekend als frontman van Genesis én als solist met een herkenbare, emotioneel geladen stem. Hij begon als kind‑acteur, maar vond zijn roeping achter het drumstel: een precieze, muzikale drummer met een feilloos gevoel voor dynamiek. In Genesis (vanaf 1970) groeide hij van drummer tot zanger na het vertrek van Peter Gabriel (1975), waarmee de band evolueerde naar een toegankelijker, song‑gericht geluid.</p>
+      <p>Parallel bouwde Collins een solocarrière die de jaren ’80 mee definieerde: <em>Face Value</em> (1981), <em>No Jacket Required</em> (1985) en <em>…But Seriously</em> (1989) leverden wereldhits op. Zijn signatuurproductie — de iconische “gated reverb”‑drums, emotionele ballads en pop met R&B‑invloeden — maakte hem zowel radiovriendelijk als muzikaal invloedrijk. Collins werkte met uiteenlopende artiesten (o.a. Eric Clapton, Frida, Philip Bailey) en componeerde filmscores, waaronder Disney’s <em>Tarzan</em> (1999), wat hem een Oscar opleverde.</p>
+      <p>Hoewel fysieke problemen later zijn drumwerk beperkten, bleef Collins opnemen en optreden — solo, met Genesis en met zijn zoon Nic Collins op drums in recente tours. Zijn nalatenschap reikt van studio‑innovatie over popcultuuriconen tot pure “drummer’s drummer”‑waardering.</p>
+    </div>
+
+    <h2>Inhoudelijke weetjes (24)</h2>
+    <div class="panel">
+      <ul class="trivia-list">
+        <li>“In the Air Tonight” werd opgenomen met een <em>Roland CR‑78</em> drumcomputer plus live‑drums die pas laat in de track binnenvallen.</li>
+        <li>De beroemde <strong>drum fill</strong> ontstond door agressief spelen in combinatie met het <strong>gated reverb</strong>‑effect op een SSL‑mengtafel.</li>
+        <li>Engineer <strong>Hugh Padgham</strong> populariseerde die sound via de <strong>talkback‑compressor</strong> en een harde noise‑gate op de drumruimte.</li>
+        <li>De legende dat Collins iemand zag verdrinken en dat dit nummer daarover gaat is <strong>mythe</strong>; Collins noemde de tekst “stream‑of‑consciousness”.</li>
+        <li>De single lanceerde Collins’ solocarrière (1981) parallel aan zijn rol in <strong>Genesis</strong>, die kort erna “Abacab” uitbracht.</li>
+        <li>Het nummer verscheen in de pilot van <strong>Miami Vice</strong> (1984) — een sleutelmoment in de symbiose tussen pop en televisie‑drama.</li>
+        <li>De <strong>Cadbury Gorilla</strong>‑reclame (2007) gaf de track nieuwe generaties fans en deed ‘m opnieuw de hitlijsten in schieten.</li>
+        <li>De clip toont Collins in minimalistische setting; de focus ligt op <em>atmosfeer</em> en <em>opbouw</em> richting de drum‑uitbarsting.</li>
+        <li>Collins speelde veel instrumenten zelf: drums, toetsen en (gedeeltelijk) bas/synth‑bas in de demo’s.</li>
+        <li>De albumversie (5:32) bouwt trager op dan de radio‑edit; live wisselde Collins het spanningsverloop en drumfills.</li>
+        <li>De zang is bijna fluisterend in de verzen en <em>projecterend</em> in de refreinen — een dynamisch contrast dat tijdloos bleek.</li>
+        <li>Collins’ persoonlijke turbulentie (scheiding) kleurde de emotionele toon van <em>Face Value</em>, waarvan dit de totem is.</li>
+        <li>De <strong>Prophet‑5</strong> en <strong>Rhodes</strong>‑klanken dragen de melancholische harmonieën in de intro en verzen.</li>
+        <li>De tekst bevat <strong>ambiguïteit</strong> en open ruimte, wat de mythevorming rond de betekenis voedde.</li>
+        <li>Het nummer wordt vaak herinterpreteerd door drummers vanwege het unieke <em>feel</em>‑moment — later in de track binnenvallen is ongebruikelijk.</li>
+        <li>In live‑settings gebruikte Collins uitgebreide tom‑opstellingen om de fill extra <strong>impact</strong> te geven in arena’s.</li>
+        <li>De gated‑drums bleven een handelsmerk in de jaren ’80 en beïnvloedden talloze producers en artiesten.</li>
+        <li>Collins werkte dicht op de <strong>control room</strong> bij opnames — het geluid van de ruimte werd een instrument op zich.</li>
+        <li>De track is een <strong>DJ‑favoriet</strong> omwille van zijn breakdown/impact‑moment; remixen houden die spanningsboog vaak intact.</li>
+        <li>“The Roof Is Leaking” als B‑kant toont Collins’ folk‑kant: sobere instrumentatie en verhalende lyriek.</li>
+        <li>Collins trad in 1985 op <strong>Live Aid</strong> zowel in Londen als in Philadelphia op — een zeldzame trans‑Atlantische dubbel (per Concorde).</li>
+        <li>Zijn duet “Easy Lover” (met <strong>Philip Bailey</strong>) en solo‑hits als “Against All Odds” bevestigden zijn <strong>cross‑genre</strong> bereik.</li>
+        <li>Als drummer is Collins beïnvloed door <strong>Ringo Starr</strong>, <strong>John Bonham</strong> en jazzgrooves; zijn feel is tegelijk strak en melodisch.</li>
+        <li>De culturele impact van “In the Air Tonight” blijft immens: van filmtrailers tot sportintro’s en virale memes.</li>
+      </ul>
+    </div>
+
+    <h2>Links</h2>
+    <div class="bio-links">
+      🔗 <a href="https://open.spotify.com/track/18AXbzPzBS8Y3AkgSxzJPb" target="_blank" rel="noopener">Spotify – In the Air Tonight</a>
+      &nbsp;•&nbsp;
+      🔗 <a href="https://en.wikipedia.org/wiki/In_the_Air_Tonight" target="_blank" rel="noopener">Wikipedia – In the Air Tonight</a>
+      &nbsp;•&nbsp;
+      🔗 <a href="https://en.wikipedia.org/wiki/Phil_Collins" target="_blank" rel="noopener">Wikipedia – Phil Collins</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Phil Collins — In the Air Tonight (European Single LP) — mistig blauwgrijs thema + cover‑achtergrond & kaart + uitgebreide bio + 24 weetjes
+  </footer>
+</body>
+</html>

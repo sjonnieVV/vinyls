@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johan Verminnen – Mooie dagen (20 jaar liedjes) — Vinyl (A/B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f1917;
+    --fg:#f3efe6;
+    --muted:#d3e6df;
+    --panel:#111c19;
+    --ring:rgba(255,255,255,.12);
+    --accent:#6fb7a7;
+    --accent2:#d3c09b;
+    --accent3:#3b6b62;
+    --glow:rgba(111,183,167,.28);
+    --grad1: radial-gradient(900px 420px at 50% -10%, rgba(111,183,167,.20), rgba(211,192,155,.10) 45%, transparent 70%);
+    --grad2: linear-gradient(135deg, rgba(111,183,167,.10), rgba(59,107,98,.08));
+  }
+  *{box-sizing:border-box}
+  body{ margin:0; background:var(--bg); color:var(--fg);
+        font-family:'Orbitron', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell;
+        text-align:center; position:relative; overflow-x:hidden;
+        animation: fade .7s ease-out both; }
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  .cover-bg{ position:fixed; inset:0; z-index:-2;
+    background-image:url('https://akerrecords.nl/wp-content/uploads/2023/04/3975801-05203611646911a486a1e646911a486a1f1684607396646911a486a22.jpeg');
+    background-size:cover; background-position:center;
+    filter:grayscale(35%) blur(8px) contrast(1.05) saturate(.92);
+    opacity:.18;
+  }
+  .cover-overlay{ position:fixed; inset:0; z-index:-1; background:
+      radial-gradient(1200px 520px at 50% -10%, rgba(0,0,0,.38), transparent 55%),
+      linear-gradient(0deg, rgba(0,0,0,.35), rgba(0,0,0,.10));
+  }
+
+  a{ color:#c9f1e6 }
+  .container{ max-width:1100px; margin:0 auto; padding:22px }
+
+  .lp-header{ padding:44px 0 22px; border-bottom:4px solid var(--accent);
+              box-shadow:0 0 28px var(--glow); background:var(--grad1) }
+  .lp-label{ width:220px;height:220px;border-radius:50%;margin:0 auto 10px;position:relative;display:grid;place-items:center;
+             background:radial-gradient(closest-side,#0f1815 0%, #14211e 68%, #0f1815 100%);
+             border:4px solid var(--ring); box-shadow:0 0 34px var(--glow), inset 0 0 42px rgba(0,0,0,.55); animation:pop .6s ease-out both .15s }
+  @keyframes pop{from{transform:scale(.96);opacity:.6}to{transform:none;opacity:1}}
+  .lp-label::before{content:"";position:absolute;width:22px;height:22px;border-radius:50%;
+                    background:radial-gradient(circle,#0f1513 0%, #274b44 60%, #0f1513 100%);
+                    border:2px solid var(--ring)}
+  .lp-text{position:absolute;inset:0;display:grid;place-items:center;padding:28px}
+  .lp-album{font-size:18px;font-weight:700;letter-spacing:.7px;text-shadow:0 0 10px var(--glow)}
+  .lp-artist{font-size:12px;color:var(--muted)}
+
+  h2,h3{ color:var(--muted); border-bottom:2px solid var(--accent);
+         padding-bottom:6px; text-shadow:0 0 10px var(--glow) }
+
+  .panel{ background:var(--grad2); border:1px solid var(--ring); border-radius:14px;
+          padding:14px 16px; box-shadow:0 0 20px rgba(0,0,0,.35);
+          text-align:left; animation:fade .7s ease-out both .1s }
+  .trackbox{ border-left:6px solid var(--accent); background:#0f1917 }
+  .vinyl-grid{ display:grid; grid-template-columns:repeat(2,minmax(260px,1fr)); gap:16px; margin-top:12px }
+  @media (max-width:800px){ .vinyl-grid{ grid-template-columns:1fr } }
+  ul{ margin:0; padding-left:20px; line-height:1.8 }
+  li::marker{ color:var(--accent2) }
+  .time{ color:#e8dcc4; opacity:.95; font-style:italic }
+
+  .bio{ margin-top:16px }
+  .bio-links{ margin:8px 0 14px; font-size:.95rem; text-align:left }
+  .trivia-list li{ margin-bottom:.85rem; line-height:1.75 }
+
+  .cover-card{ width:100%; display:grid; place-items:center; margin:10px auto 22px; animation:fade .7s ease-out both .2s }
+  .cover-card img{ width:320px; max-width:80vw; height:auto; border-radius:12px; border:1px solid var(--ring); box-shadow:0 12px 40px rgba(0,0,0,.45) }
+
+  footer{ margin-top:36px; padding:18px 12px 28px; border-top:2px solid var(--accent); color:#e6f0eb }
+</style>
+</head>
+<body>
+  <div class="cover-bg" aria-hidden="true"></div>
+  <div class="cover-overlay" aria-hidden="true"></div>
+
+  <div class="lp-header">
+    <div class="lp-label">
+      <div class="lp-text">
+        <div class="lp-album">Mooie dagen (20 jaar liedjes)</div>
+        <div class="lp-artist">Johan Verminnen</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cover-card">
+      <img src="https://akerrecords.nl/wp-content/uploads/2023/04/3975801-05203611646911a486a1e646911a486a1f1684607396646911a486a22.jpeg"
+           alt="Albumcover: Johan Verminnen – Mooie dagen (20 jaar liedjes)">
+    </div>
+
+    <h2>Tracklist — Vinyl (A/B)</h2>
+    <div class="vinyl-grid">
+      <div class="panel trackbox">
+        <h3>Kant A</h3>
+        <ul>
+          <li>1 — Mooie dagen <span class="time">· 3:50</span></li>
+          <li>2 — Laat me nu toch niet alleen <span class="time">· 4:20</span></li>
+          <li>3 — Ik wil de wereld zien <span class="time">· 3:59</span></li>
+          <li>4 — Paulien <span class="time">· 4:30</span></li>
+          <li>5 — Met 7 aan tafel <span class="time">· 2:32</span></li>
+          <li>6 — Bar Tropical <span class="time">· 3:25</span></li>
+          <li>7 — Wim <span class="time">· 2:07</span></li>
+          <li>8 — Vertel me <span class="time">· 4:26</span></li>
+        </ul>
+      </div>
+      <div class="panel trackbox">
+        <h3>Kant B</h3>
+        <ul>
+          <li>1 — Rue des bouchers <span class="time">· 3:31</span></li>
+          <li>2 — ’k Voel me goed <span class="time">· 3:46</span></li>
+          <li>3 — Zingen tot morgenvroeg <span class="time">· 3:01</span></li>
+          <li>4 — Een of andere dag <span class="time">· 3:41</span></li>
+          <li>5 — Zeiler ver van huis <span class="time">· 4:29</span></li>
+          <li>6 — Vier hoog in de wolken <span class="time">· 2:12</span></li>
+          <li>7 — Brussel <span class="time">· 3:50</span></li>
+          <li>8 — Iets om in te geloven <span class="time">· 3:52</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Korte bio</h2>
+    <div class="panel bio">
+      <p><strong>Mooie dagen (20 jaar liedjes)</strong> (1989) is de jubileumcompilatie waarmee Johan Verminnen twee decennia songs bundelt. Het album verenigt klassiekers als “Laat me nu toch niet alleen”, “Rue des Bouchers”, “Brussel” en het titelnummer, in frisse volgorde en met een sound die laveert tussen kleinkunst, chanson en pop.</p>
+      <p>De LP‑editie brengt 16 kerntracks verdeeld over kant A en B; de CD‑versie bevatte meer nummers (tot 19). De selectie zet Verminnen’s verhalende stijl en Brusselse couleur locale vol in de verf.</p>
+    </div>
+
+    <h2>Links</h2>
+    <div class="bio-links">
+      🔗 <a href="https://www.johanverminnen.be/nl/mooie-dagen" target="_blank" rel="noopener">Officiële site – Mooie dagen (1989)</a>
+      &nbsp;•&nbsp;
+      🔗 <a href="https://nl.wikipedia.org/wiki/Johan_Verminnen" target="_blank" rel="noopener">Wikipedia – Johan Verminnen</a>
+      &nbsp;•&nbsp;
+      🔗 <a href="https://open.spotify.com/artist/3gH63DgDuvcGgXEmkHB2ur" target="_blank" rel="noopener">Spotify – Johan Verminnen</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Johan Verminnen — Mooie dagen (20 jaar liedjes) — vinyl‑indeling + cover‑achtergrond & kaart + fade‑in
+  </footer>
+</body>
+</html>
